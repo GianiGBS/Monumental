@@ -9,14 +9,20 @@
 /* Begin PBXBuildFile section */
 		C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF6E2AD716C800E2220C /* AppDelegate.swift */; };
 		C26FBF712AD716C800E2220C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF702AD716C800E2220C /* SceneDelegate.swift */; };
-		C26FBF732AD716C800E2220C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF722AD716C800E2220C /* ViewController.swift */; };
+		C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF722AD716C800E2220C /* SearchViewController.swift */; };
 		C26FBF762AD716C800E2220C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF742AD716C800E2220C /* Main.storyboard */; };
 		C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */; };
 		C26FBF7B2AD716C900E2220C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7A2AD716C900E2220C /* Assets.xcassets */; };
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
 		C26FBF892AD716CA00E2220C /* MonumentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF882AD716CA00E2220C /* MonumentalTests.swift */; };
-		C26FBF932AD716CA00E2220C /* MonumentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF922AD716CA00E2220C /* MonumentalUITests.swift */; };
-		C26FBF952AD716CA00E2220C /* MonumentalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF942AD716CA00E2220C /* MonumentalUITestsLaunchTests.swift */; };
+		C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */; };
+		C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868632AE6D2C700F3294C /* ExploreService.swift */; };
+		C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868652AE6D2DE00F3294C /* ExploreURL.swift */; };
+		C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868672AE6D31900F3294C /* ExploreManager.swift */; };
+		C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868692AE6D33900F3294C /* Explore.swift */; };
+		C2D8686D2AE6DA9600F3294C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686C2AE6DA9600F3294C /* Result.swift */; };
+		C2D868702AE71BD900F3294C /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686F2AE71BD900F3294C /* CoreLocation.swift */; };
+		C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868712AE71C1100F3294C /* CurrentLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,7 @@
 		C26FBF6B2AD716C800E2220C /* Monumental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monumental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FBF6E2AD716C800E2220C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26FBF702AD716C800E2220C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C26FBF722AD716C800E2220C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C26FBF722AD716C800E2220C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C26FBF752AD716C800E2220C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C26FBF782AD716C800E2220C /* Monumental.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Monumental.xcdatamodel; sourceTree = "<group>"; };
 		C26FBF7A2AD716C900E2220C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,8 +55,14 @@
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FBF882AD716CA00E2220C /* MonumentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentalTests.swift; sourceTree = "<group>"; };
 		C26FBF8E2AD716CA00E2220C /* MonumentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C26FBF922AD716CA00E2220C /* MonumentalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentalUITests.swift; sourceTree = "<group>"; };
-		C26FBF942AD716CA00E2220C /* MonumentalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManagement.swift; sourceTree = "<group>"; };
+		C2D868632AE6D2C700F3294C /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
+		C2D868652AE6D2DE00F3294C /* ExploreURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreURL.swift; sourceTree = "<group>"; };
+		C2D868672AE6D31900F3294C /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
+		C2D868692AE6D33900F3294C /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		C2D8686C2AE6DA9600F3294C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2D8686F2AE71BD900F3294C /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		C2D868712AE71C1100F3294C /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +95,6 @@
 			children = (
 				C26FBF6D2AD716C800E2220C /* Monumental */,
 				C26FBF872AD716CA00E2220C /* MonumentalTests */,
-				C26FBF912AD716CA00E2220C /* MonumentalUITests */,
 				C26FBF6C2AD716C800E2220C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,12 +114,10 @@
 			children = (
 				C26FBF6E2AD716C800E2220C /* AppDelegate.swift */,
 				C26FBF702AD716C800E2220C /* SceneDelegate.swift */,
-				C26FBF722AD716C800E2220C /* ViewController.swift */,
-				C26FBF742AD716C800E2220C /* Main.storyboard */,
-				C26FBF7A2AD716C900E2220C /* Assets.xcassets */,
-				C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */,
 				C26FBF7F2AD716C900E2220C /* Info.plist */,
-				C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */,
+				C26FBFA22AD7228300E2220C /* Model */,
+				C26FBFA12AD7226400E2220C /* View */,
+				C26FBFA32AD722A800E2220C /* Controller */,
 			);
 			path = Monumental;
 			sourceTree = "<group>";
@@ -121,13 +130,62 @@
 			path = MonumentalTests;
 			sourceTree = "<group>";
 		};
-		C26FBF912AD716CA00E2220C /* MonumentalUITests */ = {
+		C26FBFA12AD7226400E2220C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C26FBF922AD716CA00E2220C /* MonumentalUITests.swift */,
-				C26FBF942AD716CA00E2220C /* MonumentalUITestsLaunchTests.swift */,
+				C26FBF7A2AD716C900E2220C /* Assets.xcassets */,
+				C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */,
+				C26FBF742AD716C800E2220C /* Main.storyboard */,
 			);
-			path = MonumentalUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		C26FBFA22AD7228300E2220C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */,
+				C26FBFA42AD7232000E2220C /* CoreData */,
+				C2D868732AE71C1C00F3294C /* CoreLocation */,
+				C2D8686B2AE6D34500F3294C /* Explore */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C26FBFA32AD722A800E2220C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C26FBF722AD716C800E2220C /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C26FBFA42AD7232000E2220C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C2D8686B2AE6D34500F3294C /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				C2D868692AE6D33900F3294C /* Explore.swift */,
+				C2D8686C2AE6DA9600F3294C /* Result.swift */,
+				C2D868652AE6D2DE00F3294C /* ExploreURL.swift */,
+				C2D868632AE6D2C700F3294C /* ExploreService.swift */,
+				C2D868672AE6D31900F3294C /* ExploreManager.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		C2D868732AE71C1C00F3294C /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8686F2AE71BD900F3294C /* CoreLocation.swift */,
+				C2D868712AE71C1100F3294C /* CurrentLocation.swift */,
+			);
+			path = CoreLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +198,7 @@
 				C26FBF672AD716C800E2220C /* Sources */,
 				C26FBF682AD716C800E2220C /* Frameworks */,
 				C26FBF692AD716C800E2220C /* Resources */,
+				C2D8686E2AE6DD4300F3294C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,15 +315,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2D8686E2AE6DD4300F3294C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C26FBF672AD716C800E2220C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26FBF732AD716C800E2220C /* ViewController.swift in Sources */,
+				C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */,
+				C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */,
+				C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */,
+				C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */,
+				C2D868702AE71BD900F3294C /* CoreLocation.swift in Sources */,
+				C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */,
 				C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */,
+				C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */,
+				C2D8686D2AE6DA9600F3294C /* Result.swift in Sources */,
 				C26FBF712AD716C800E2220C /* SceneDelegate.swift in Sources */,
 				C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */,
+				C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +368,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26FBF952AD716CA00E2220C /* MonumentalUITestsLaunchTests.swift in Sources */,
-				C26FBF932AD716CA00E2220C /* MonumentalUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
