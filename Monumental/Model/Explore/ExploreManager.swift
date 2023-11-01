@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - Explore API View Delegate
 class ExploreManager {
-    
+
 }

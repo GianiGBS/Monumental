@@ -8,3 +8,12 @@
 import Foundation
 
 // MARK: - Explore
+struct Explore: Decodable {
+    let totalCount: Int?
+    let results: [Landmark]?
+}
+
+// MARK: - CoordonneesAuFormatWgs84
+struct CoordonneesAuFormatWgs84: Decodable {
+    let lon, lat: Double?
+}

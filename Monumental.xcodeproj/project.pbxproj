@@ -14,26 +14,23 @@
 		C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */; };
 		C26FBF7B2AD716C900E2220C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7A2AD716C900E2220C /* Assets.xcassets */; };
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
-		C26FBF892AD716CA00E2220C /* MonumentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF882AD716CA00E2220C /* MonumentalTests.swift */; };
 		C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */; };
 		C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868632AE6D2C700F3294C /* ExploreService.swift */; };
 		C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868652AE6D2DE00F3294C /* ExploreURL.swift */; };
 		C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868672AE6D31900F3294C /* ExploreManager.swift */; };
 		C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868692AE6D33900F3294C /* Explore.swift */; };
-		C2D8686D2AE6DA9600F3294C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686C2AE6DA9600F3294C /* Result.swift */; };
+		C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686C2AE6DA9600F3294C /* Landmark.swift */; };
 		C2D868702AE71BD900F3294C /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686F2AE71BD900F3294C /* CoreLocation.swift */; };
 		C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868712AE71C1100F3294C /* CurrentLocation.swift */; };
+		C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C2D8687D2AF150FE00F3294C /* Alamofire */; };
+		C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */; };
+		C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868812AF1B9DA00F3294C /* MockedData.swift */; };
+		C2D868862AF20EAF00F3294C /* Landmark.json in Resources */ = {isa = PBXBuildFile; fileRef = C2D868852AF20EAF00F3294C /* Landmark.json */; };
+		C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C26FBF852AD716CA00E2220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C26FBF632AD716C800E2220C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C26FBF6A2AD716C800E2220C;
-			remoteInfo = Monumental;
-		};
-		C26FBF8F2AD716CA00E2220C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C26FBF632AD716C800E2220C /* Project object */;
 			proxyType = 1;
@@ -53,16 +50,18 @@
 		C26FBF7D2AD716C900E2220C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C26FBF7F2AD716C900E2220C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C26FBF882AD716CA00E2220C /* MonumentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentalTests.swift; sourceTree = "<group>"; };
-		C26FBF8E2AD716CA00E2220C /* MonumentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManagement.swift; sourceTree = "<group>"; };
 		C2D868632AE6D2C700F3294C /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
 		C2D868652AE6D2DE00F3294C /* ExploreURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreURL.swift; sourceTree = "<group>"; };
 		C2D868672AE6D31900F3294C /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
 		C2D868692AE6D33900F3294C /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
-		C2D8686C2AE6DA9600F3294C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2D8686C2AE6DA9600F3294C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		C2D8686F2AE71BD900F3294C /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
 		C2D868712AE71C1100F3294C /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
+		C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExploreSession.swift; sourceTree = "<group>"; };
+		C2D868812AF1B9DA00F3294C /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		C2D868852AF20EAF00F3294C /* Landmark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Landmark.json; sourceTree = "<group>"; };
+		C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C26FBF812AD716CA00E2220C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C26FBF8B2AD716CA00E2220C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,7 +97,6 @@
 			children = (
 				C26FBF6B2AD716C800E2220C /* Monumental.app */,
 				C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */,
-				C26FBF8E2AD716CA00E2220C /* MonumentalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +117,7 @@
 		C26FBF872AD716CA00E2220C /* MonumentalTests */ = {
 			isa = PBXGroup;
 			children = (
-				C26FBF882AD716CA00E2220C /* MonumentalTests.swift */,
+				C2D868892AF2AEA100F3294C /* ExploreTest */,
 			);
 			path = MonumentalTests;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				C2D868692AE6D33900F3294C /* Explore.swift */,
-				C2D8686C2AE6DA9600F3294C /* Result.swift */,
+				C2D8686C2AE6DA9600F3294C /* Landmark.swift */,
 				C2D868652AE6D2DE00F3294C /* ExploreURL.swift */,
 				C2D868632AE6D2C700F3294C /* ExploreService.swift */,
 				C2D868672AE6D31900F3294C /* ExploreManager.swift */,
@@ -186,6 +178,17 @@
 				C2D868712AE71C1100F3294C /* CurrentLocation.swift */,
 			);
 			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		C2D868892AF2AEA100F3294C /* ExploreTest */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */,
+				C2D868812AF1B9DA00F3294C /* MockedData.swift */,
+				C2D868852AF20EAF00F3294C /* Landmark.json */,
+				C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */,
+			);
+			path = ExploreTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +208,9 @@
 			dependencies = (
 			);
 			name = Monumental;
+			packageProductDependencies = (
+				C2D8687D2AF150FE00F3294C /* Alamofire */,
+			);
 			productName = Monumental;
 			productReference = C26FBF6B2AD716C800E2220C /* Monumental.app */;
 			productType = "com.apple.product-type.application";
@@ -227,24 +233,6 @@
 			productReference = C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C26FBF8D2AD716CA00E2220C /* MonumentalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C26FBF9E2AD716CA00E2220C /* Build configuration list for PBXNativeTarget "MonumentalUITests" */;
-			buildPhases = (
-				C26FBF8A2AD716CA00E2220C /* Sources */,
-				C26FBF8B2AD716CA00E2220C /* Frameworks */,
-				C26FBF8C2AD716CA00E2220C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C26FBF902AD716CA00E2220C /* PBXTargetDependency */,
-			);
-			name = MonumentalUITests;
-			productName = MonumentalUITests;
-			productReference = C26FBF8E2AD716CA00E2220C /* MonumentalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,10 +250,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = C26FBF6A2AD716C800E2220C;
 					};
-					C26FBF8D2AD716CA00E2220C = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = C26FBF6A2AD716C800E2220C;
-					};
 				};
 			};
 			buildConfigurationList = C26FBF662AD716C800E2220C /* Build configuration list for PBXProject "Monumental" */;
@@ -277,13 +261,15 @@
 				Base,
 			);
 			mainGroup = C26FBF622AD716C800E2220C;
+			packageReferences = (
+				C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C26FBF6C2AD716C800E2220C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C26FBF6A2AD716C800E2220C /* Monumental */,
 				C26FBF832AD716CA00E2220C /* MonumentalTests */,
-				C26FBF8D2AD716CA00E2220C /* MonumentalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,13 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C26FBF8C2AD716CA00E2220C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C2D868862AF20EAF00F3294C /* Landmark.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +329,7 @@
 				C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */,
 				C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */,
 				C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */,
-				C2D8686D2AE6DA9600F3294C /* Result.swift in Sources */,
+				C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */,
 				C26FBF712AD716C800E2220C /* SceneDelegate.swift in Sources */,
 				C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */,
 				C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */,
@@ -360,14 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26FBF892AD716CA00E2220C /* MonumentalTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C26FBF8A2AD716CA00E2220C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */,
+				C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */,
+				C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,11 +353,6 @@
 			isa = PBXTargetDependency;
 			target = C26FBF6A2AD716C800E2220C /* Monumental */;
 			targetProxy = C26FBF852AD716CA00E2220C /* PBXContainerItemProxy */;
-		};
-		C26FBF902AD716CA00E2220C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C26FBF6A2AD716C800E2220C /* Monumental */;
-			targetProxy = C26FBF8F2AD716CA00E2220C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,40 +582,6 @@
 			};
 			name = Release;
 		};
-		C26FBF9F2AD716CA00E2220C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = StudioCreoliste.MonumentalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Monumental;
-			};
-			name = Debug;
-		};
-		C26FBFA02AD716CA00E2220C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = StudioCreoliste.MonumentalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Monumental;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -676,16 +612,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C26FBF9E2AD716CA00E2220C /* Build configuration list for PBXNativeTarget "MonumentalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C26FBF9F2AD716CA00E2220C /* Debug */,
-				C26FBFA02AD716CA00E2220C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2D8687D2AF150FE00F3294C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */ = {
