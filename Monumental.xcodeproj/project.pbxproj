@@ -20,13 +20,15 @@
 		C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868672AE6D31900F3294C /* ExploreManager.swift */; };
 		C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868692AE6D33900F3294C /* Explore.swift */; };
 		C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686C2AE6DA9600F3294C /* Landmark.swift */; };
-		C2D868702AE71BD900F3294C /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686F2AE71BD900F3294C /* CoreLocation.swift */; };
+		C2D868702AE71BD900F3294C /* CoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */; };
 		C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868712AE71C1100F3294C /* CurrentLocation.swift */; };
 		C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C2D8687D2AF150FE00F3294C /* Alamofire */; };
 		C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */; };
 		C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868812AF1B9DA00F3294C /* MockedData.swift */; };
 		C2D868862AF20EAF00F3294C /* Landmark.json in Resources */ = {isa = PBXBuildFile; fileRef = C2D868852AF20EAF00F3294C /* Landmark.json */; };
 		C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */; };
+		C2D8688C2AF93B1A00F3294C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D8688B2AF93B1A00F3294C /* CoreLocation.framework */; };
+		C2D8688E2B02717000F3294C /* CoreLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +58,14 @@
 		C2D868672AE6D31900F3294C /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
 		C2D868692AE6D33900F3294C /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		C2D8686C2AE6DA9600F3294C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
-		C2D8686F2AE71BD900F3294C /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationService.swift; sourceTree = "<group>"; };
 		C2D868712AE71C1100F3294C /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExploreSession.swift; sourceTree = "<group>"; };
 		C2D868812AF1B9DA00F3294C /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		C2D868852AF20EAF00F3294C /* Landmark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Landmark.json; sourceTree = "<group>"; };
 		C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreServiceTests.swift; sourceTree = "<group>"; };
+		C2D8688B2AF93B1A00F3294C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D8688C2AF93B1A00F3294C /* CoreLocation.framework in Frameworks */,
 				C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +94,7 @@
 				C26FBF6D2AD716C800E2220C /* Monumental */,
 				C26FBF872AD716CA00E2220C /* MonumentalTests */,
 				C26FBF6C2AD716C800E2220C /* Products */,
+				C2D8688A2AF93B1A00F3294C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C2D868892AF2AEA100F3294C /* ExploreTest */,
+				C2D8688F2B02901000F3294C /* CoreLocationTest */,
 			);
 			path = MonumentalTests;
 			sourceTree = "<group>";
@@ -174,7 +181,7 @@
 		C2D868732AE71C1C00F3294C /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				C2D8686F2AE71BD900F3294C /* CoreLocation.swift */,
+				C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */,
 				C2D868712AE71C1100F3294C /* CurrentLocation.swift */,
 			);
 			path = CoreLocation;
@@ -189,6 +196,22 @@
 				C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */,
 			);
 			path = ExploreTest;
+			sourceTree = "<group>";
+		};
+		C2D8688A2AF93B1A00F3294C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8688B2AF93B1A00F3294C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D8688F2B02901000F3294C /* CoreLocationTest */ = {
+			isa = PBXGroup;
+			children = (
+				C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */,
+			);
+			path = CoreLocationTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +348,7 @@
 				C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */,
 				C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */,
 				C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */,
-				C2D868702AE71BD900F3294C /* CoreLocation.swift in Sources */,
+				C2D868702AE71BD900F3294C /* CoreLocationService.swift in Sources */,
 				C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */,
 				C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */,
 				C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */,
@@ -343,6 +366,7 @@
 				C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */,
 				C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */,
 				C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */,
+				C2D8688E2B02717000F3294C /* CoreLocationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

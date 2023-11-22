@@ -14,5 +14,5 @@ struct Landmark: Decodable {
     let historique: String?
     let region: [String]?
     let departementEnLettres: [String]?
-    let coordonneesAuFormatWgs84: CoordonneesAuFormatWgs84?
+    let coordonneesWgs84: CoordonneesWgs84?
 }

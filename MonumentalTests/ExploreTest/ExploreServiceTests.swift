@@ -85,7 +85,7 @@ final class ExploreServiceTests: XCTestCase {
         }
     }
 
-    func testGetLandmarkWithEmptyIngredients() {
+    func testGetLandmarkWithEmptyDepartement() {
         // Given
         let mockedResult = MockedResult(response: MockedData.responseOK,
                                         data: MockedData.recipesCorrectData,

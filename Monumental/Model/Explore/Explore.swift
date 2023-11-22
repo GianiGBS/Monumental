@@ -14,6 +14,7 @@ struct Explore: Decodable {
 }
 
 // MARK: - CoordonneesAuFormatWgs84
-struct CoordonneesAuFormatWgs84: Decodable {
-    let lon, lat: Double?
+struct CoordonneesWgs84: Decodable {
+    let lon: Double?
+    let lat: Double?
 }
