@@ -16,3 +16,9 @@ struct Landmark: Decodable {
     let departementEnLettres: [String]?
     let coordonneesWgs84: CoordonneesWgs84?
 }
+
+// MARK: - CoordonneesAuFormatWgs84
+struct CoordonneesWgs84: Decodable {
+    let lon: Double?
+    let lat: Double?
+}

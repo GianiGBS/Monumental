@@ -12,9 +12,3 @@ struct Explore: Decodable {
     let totalCount: Int?
     let results: [Landmark]?
 }
-
-// MARK: - CoordonneesAuFormatWgs84
-struct CoordonneesWgs84: Decodable {
-    let lon: Double?
-    let lat: Double?
-}

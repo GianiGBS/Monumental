@@ -20,7 +20,7 @@ class ExploreService {
     }
 
     // MARK: - Methods
-    func getLandmark(for departements: String, callback: @escaping([Landmark]?, Error?) -> Void) {
+    func getLandmark(for departements: String, callback: @escaping(Explore?, Error?) -> Void) {
         guard let apiURL = ExploreURL.endpoint(departement: departements) else {
                 // Handle the case where the URL is invalid
             callback(nil, ExploreErrors.invalidURL)
@@ -34,7 +34,7 @@ class ExploreService {
                 case .success(let data):
                     do {
                         let decoder = JSONDecoder()
-                        let recipes = try decoder.decode([Landmark].self, from: data)
+                        let recipes = try decoder.decode(Explore.self, from: data)
                         callback(recipes, nil)
                     } catch {
                         print(error.localizedDescription)
