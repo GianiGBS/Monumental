@@ -1,5 +1,5 @@
 //
-//  SelectTableViewController.swift
+//  ContentTableViewController.swift
 //  Monumental
 //
 //  Created by Giovanni Gabriel on 15/01/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SelectTableViewController: UITableViewController {
+class ContentTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

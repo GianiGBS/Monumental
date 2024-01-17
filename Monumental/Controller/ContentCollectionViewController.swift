@@ -1,5 +1,5 @@
 //
-//  SelectCollectionViewController.swift
+//  ContentCollectionViewController.swift
 //  Monumental
 //
 //  Created by Giovanni Gabriel on 15/01/2024.
@@ -9,8 +9,11 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class SelectCollectionViewController: UICollectionViewController {
+class ContentCollectionViewController: UICollectionViewController {
 
+    // MARK: - Properties
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
