@@ -14,6 +14,8 @@
 		C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */; };
 		C26FBF7B2AD716C900E2220C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7A2AD716C900E2220C /* Assets.xcassets */; };
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
+		C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278624A2B55B048003005AC /* ContentTableViewController.swift */; };
+		C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */; };
 		C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */; };
 		C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868632AE6D2C700F3294C /* ExploreService.swift */; };
 		C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868652AE6D2DE00F3294C /* ExploreURL.swift */; };
@@ -29,9 +31,7 @@
 		C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */; };
 		C2D8688C2AF93B1A00F3294C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D8688B2AF93B1A00F3294C /* CoreLocation.framework */; };
 		C2D8688E2B02717000F3294C /* CoreLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */; };
-		C2D868912B10D52C00F3294C /* MonumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868902B10D52C00F3294C /* MonumentCollectionViewCell.swift */; };
 		C2D868932B167D9C00F3294C /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868922B167D9C00F3294C /* Department.swift */; };
-		C2D868952B1698B000F3294C /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868942B1698B000F3294C /* SelectViewController.swift */; };
 		C2D8689C2B1EA6C800F3294C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8689B2B1EA6C800F3294C /* MapViewController.swift */; };
 		C2D8689F2B1FA88200F3294C /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = C2D8689E2B1FA88200F3294C /* FloatingPanel */; };
 		C2D868A22B28ADEE00F3294C /* MonumentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868A12B28ADEE00F3294C /* MonumentDetailsViewController.swift */; };
@@ -58,6 +58,8 @@
 		C26FBF7D2AD716C900E2220C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C26FBF7F2AD716C900E2220C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C278624A2B55B048003005AC /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
+		C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
 		C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManagement.swift; sourceTree = "<group>"; };
 		C2D868632AE6D2C700F3294C /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
 		C2D868652AE6D2DE00F3294C /* ExploreURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreURL.swift; sourceTree = "<group>"; };
@@ -72,9 +74,7 @@
 		C2D868872AF2100C00F3294C /* ExploreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreServiceTests.swift; sourceTree = "<group>"; };
 		C2D8688B2AF93B1A00F3294C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationServiceTests.swift; sourceTree = "<group>"; };
-		C2D868902B10D52C00F3294C /* MonumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2D868922B167D9C00F3294C /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
-		C2D868942B1698B000F3294C /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		C2D8689B2B1EA6C800F3294C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C2D868A12B28ADEE00F3294C /* MonumentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,7 @@
 				C26FBF7A2AD716C900E2220C /* Assets.xcassets */,
 				C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */,
 				C26FBF742AD716C800E2220C /* Main.storyboard */,
-				C2D868902B10D52C00F3294C /* MonumentCollectionViewCell.swift */,
+				C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +168,7 @@
 			children = (
 				C2D868A02B1FAE1F00F3294C /* MapVC */,
 				C2D8689A2B1E255E00F3294C /* SearchVC */,
+				C29622342B4F5FAB003D68B3 /* FloatingPanel */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +179,15 @@
 				C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C29622342B4F5FAB003D68B3 /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				C278624A2B55B048003005AC /* ContentTableViewController.swift */,
+				C2D868A12B28ADEE00F3294C /* MonumentDetailsViewController.swift */,
+			);
+			name = FloatingPanel;
 			sourceTree = "<group>";
 		};
 		C2D8686B2AE6D34500F3294C /* Explore */ = {
@@ -241,8 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				C2D8689B2B1EA6C800F3294C /* MapViewController.swift */,
-				C2D868942B1698B000F3294C /* SelectViewController.swift */,
-				C2D868A12B28ADEE00F3294C /* MonumentDetailsViewController.swift */,
 			);
 			name = MapVC;
 			sourceTree = "<group>";
@@ -257,7 +265,6 @@
 				C26FBF672AD716C800E2220C /* Sources */,
 				C26FBF682AD716C800E2220C /* Frameworks */,
 				C26FBF692AD716C800E2220C /* Resources */,
-				C2D8686E2AE6DD4300F3294C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -298,7 +305,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					C26FBF6A2AD716C800E2220C = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -321,6 +328,7 @@
 			packageReferences = (
 				C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C2D8689D2B1FA88200F3294C /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				C2BA10762B55EA33004B715F /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = C26FBF6C2AD716C800E2220C /* Products */;
 			projectDirPath = "";
@@ -353,49 +361,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		C2D8686E2AE6DD4300F3294C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C26FBF672AD716C800E2220C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */,
 				C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */,
 				C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */,
 				C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */,
 				C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */,
 				C2D868702AE71BD900F3294C /* CoreLocationService.swift in Sources */,
+				C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */,
 				C2D868932B167D9C00F3294C /* Department.swift in Sources */,
 				C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */,
 				C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */,
 				C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */,
 				C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */,
-				C2D868952B1698B000F3294C /* SelectViewController.swift in Sources */,
 				C2D8689C2B1EA6C800F3294C /* MapViewController.swift in Sources */,
 				C2D868A22B28ADEE00F3294C /* MonumentDetailsViewController.swift in Sources */,
 				C26FBF712AD716C800E2220C /* SceneDelegate.swift in Sources */,
 				C26FBF792AD716C800E2220C /* Monumental.xcdatamodeld in Sources */,
 				C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */,
-				C2D868912B10D52C00F3294C /* MonumentCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +463,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -536,6 +524,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -679,6 +668,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C2BA10762B55EA33004B715F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
 		C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";

@@ -16,7 +16,7 @@ class SearchViewController: UIViewController {
     let allDepartments = DepartmentManager.departments
     var filteredDepartments: [Department] = []  // Liste des départements filtrée
     let cellIndentifier = "DepartementCell"
-    private let landmarkModel = ExploreManager()
+    public weak var delegate: MapViewDelegate?
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -24,9 +24,7 @@ class SearchViewController: UIViewController {
         setUpSearchController()
         setUpTableView()
         restoreCurrentDataSource()
-        setUpDelegateModel()
     }
-    // MARK: - Actions
 
     // MARK: - Methods
     func setUpSearchController() {
@@ -47,13 +45,11 @@ class SearchViewController: UIViewController {
         filteredDepartments = allDepartments
         tableView.reloadData() // mise à jour de la table view
     }
-    func setUpDelegateModel() {
-        landmarkModel.delegate = self
-    }
 }
 
 // MARK: - UISearchResultsUpdating
 extension SearchViewController: UISearchResultsUpdating {
+
 // MARK: AutoComplesion
     func updateSearchResults(for searchController: UISearchController) {
         // searchBar press
@@ -72,6 +68,7 @@ extension SearchViewController: UISearchResultsUpdating {
         tableView.reloadData()
 //        updateSearchResultsTableView(with: filteredDepartments)
     }
+
 // MARK: Update AutoCompletion Table
     func updateSearchResultsTableView(with departments: [Department]) {
         // Mise à jour des résultats de recherche avec les départements filtrés.
@@ -79,14 +76,15 @@ extension SearchViewController: UISearchResultsUpdating {
         tableView.reloadData() // mise à jour de la table view
     }
 }
+
 // MARK: - UISearchBar - Delegate
 extension SearchViewController: UISearchBarDelegate {
+
     // MARK: Text begin Editing
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
 
-        // Présentez votre SearchResultsViewController
-//        presentSearchResultsController()
     }
+
     // MARK: Search button cliked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let selectedDepartment = searchBar.text else { return }
@@ -97,9 +95,10 @@ extension SearchViewController: UISearchBarDelegate {
         // Dismiss modal
         dismiss(animated: true, completion: nil)
         }
+
     // MARK: Cancel button cliked
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        // Réinitialiser la liste des départements lorsque l'annulation de la recherche
+        // Réinitialiser la liste des départements en cas d'annulation de la recherche
         filteredDepartments = allDepartments
         updateSearchResultsTableView(with: filteredDepartments)
         print("Dismiss")
@@ -107,16 +106,20 @@ extension SearchViewController: UISearchBarDelegate {
         dismiss(animated: true, completion: nil)
     }
 }
+
 // MARK: - UITableView - DataSource
 extension SearchViewController: UITableViewDataSource {
+
     // MARK: Number of Sections
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+
     // MARK: Number of Rows in Sections
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         filteredDepartments.count
     }
+
     // MARK: Cell for Row At
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
@@ -135,33 +138,18 @@ extension SearchViewController: UITableViewDataSource {
         return cell
     }
 }
+
 // MARK: - UITableView - Delegate
 extension SearchViewController: UITableViewDelegate {
+
+    // MARK: Did select row at
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedDepartment = filteredDepartments[indexPath.row]
-//        Remplir le champ de texte de recherche avec le nom de l'élément sélectionné
-//            searchController.searchBar.text = selectedDepartment.name
-//        Fetch les données pour le département
-        landmarkModel.fetchData(for: selectedDepartment.name)
         print(selectedDepartment)
-//        Reduire la vue modal (SearchViewController)
-        dismiss(animated: true, completion: nil)
-    }
-}
-// MARK: - ExploreManager - ViewDelegate
-extension SearchViewController: ViewDelegate {
-    func updateView() {
-        print(landmarkModel.monuments)
-        //        Reduire le floatingPanel de la MapView
-                if let mapViewController = parent as? MapViewController {
-                    mapViewController.landmarks = landmarkModel.monuments
-                    mapViewController.addLandmarkMarkers()
-                    mapViewController.floatingPanelController.dismiss(animated: true, completion: {
-                    })
-                }
-    }
-    func toggleActivityIndicator(shown: Bool) {
-    }
-    func presentAlert(title: String, message: String) {
+
+        // Send selected department to MapView
+        delegate?.didRequestLandmarks(department: selectedDepartment.name)
+        // dismiss SearchView
+        delegate?.dismissSearchModal()
     }
 }

@@ -10,35 +10,43 @@ import CoreLocation
 
 class CoreLocationService: NSObject, CLLocationManagerDelegate {
 
-    // MARK: - Properties
-    static var sharedInstance = CoreLocationService()
-    private let location = CLLocationManager()
-    private var currentLocation: CLLocation?
+    // MARK: - Singleton
+    static var shared = CoreLocationService()
 
-    // MARK: - Initialization
+    // MARK: - Properties
+    private let locationManager = CLLocationManager()
+    private var currentLocation: CLLocation?
+    var currentDepartment = ""
+    weak var delegate: CorelocationServiceDelegate?
 
     // MARK: - Methods
-
-    // MARK: -
     func getLocation() {
-        location.delegate = self
-        location.desiredAccuracy = kCLLocationAccuracyBest
-        location.requestWhenInUseAuthorization()
-        location.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    func stopUpdatingLocation() {
+        locationManager.stopUpdatingLocation()
     }
     // MARK: - Get location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             if let location = locations.first {
                 currentLocation = location
 
+                let dispatchGroup = DispatchGroup()
+                dispatchGroup.enter()
+                
                 // Call to get departement from location
                 getDepartmentName(for: location) { departmentName, error in
                     if let department = departmentName {
+                        self.currentDepartment = "\(department)"
                         print("User is located in : \(department)")
 
                     } else if let error = error {
                         print("Reverse geocoding error : \(error.localizedDescription)")
                     }
+                    dispatchGroup.leave()
                 }
             }
         }
@@ -54,7 +62,7 @@ class CoreLocationService: NSObject, CLLocationManagerDelegate {
                 }
 
                 if let placemark = placemarks?.first {
-                    if let department = placemark.administrativeArea {
+                    if let department = placemark.subAdministrativeArea {
                         completion(department, nil)
                     } else {
                         completion(nil, nil)

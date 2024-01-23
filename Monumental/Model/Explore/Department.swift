@@ -12,7 +12,7 @@ struct Department {
     let name: String
 
 }
-
+// MARK: - Depatement List
 struct DepartmentManager {
     static let departments: [Department] = [
         Department(code: "01", name: "Ain"),

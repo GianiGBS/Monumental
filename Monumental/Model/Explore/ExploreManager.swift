@@ -17,10 +17,10 @@ class ExploreManager {
 
     // MARK: - Methods
     public func fetchData(for departements: String) {
-        self.delegate?.toggleActivityIndicator(shown: true)
+        self.delegate?.fetchDataInProgress(shown: true)
 
         exploreService.getLandmark(for: departements) { [weak self] explore, error in
-            self?.delegate?.toggleActivityIndicator(shown: false)
+            self?.delegate?.fetchDataInProgress(shown: false)
 
             DispatchQueue.main.async { [weak self] in
                 if let error = error {

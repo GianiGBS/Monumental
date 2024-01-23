@@ -8,82 +8,70 @@
 import UIKit
 
 class ContentTableViewController: UITableViewController {
+    
+    // MARK: - Outlets
+    
 
+    // MARK: - Properties
+    var department = ""
+    var monuments: [Landmark]? = []
+    let cellIdentifier = "MonumentCell"
+    var selectedRow = 0
+    private let segueIdentifier = "tableViewToDetails"
+
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == segueIdentifier, 
+            let detailVC =  segue.destination as? MonumentDetailsViewController,
+            let selectedLandmark = monuments?[selectedRow] {
+                detailVC.selectedLandmark = selectedLandmark
+        }
     }
-    */
+    // MARK: - Methods
+    // MARK: - TableView data source
+    // MARK: Number of Sections
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // return the number of sections
+        return 1
+    }
+    // MARK: Number of Rows in Sections
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return the number of rows
+        return monuments?.count ?? 0
+    }
+    // MARK: Cell for Row At
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let monumentCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MonumentTableViewCell
+        else { 
+            print("Erreur: Impossible de créer une cellule MonumentTableViewCell")
+            return UITableViewCell()
+        }
+        guard let monument = monuments?[indexPath.row],
+              let title = monument.titreEditorialDeLaNotice,
+              let subtitle = monument.denominationDeLEdifice
+        else {return monumentCell}
+        
+        let index = "\(indexPath.row + 1)."
 
+        // Configuration of monumentCell
+        monumentCell.configure(index: index, 
+                               title: title,
+                               subtitle: subtitle)
+
+        return monumentCell
+        
+    }
+    // MARK: - TableView Delegate
+    // MARK: Did Select Row At
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let monuments = monuments, indexPath.row < monuments.count else {
+            print("Erreur: Monuments nul ou IndexPath '\(indexPath)' hors de la plage")
+            return
+        }
+        self.selectedRow = indexPath.row
+        performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
 }

@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CD7C6E08-81B3-496C-922E-DD2C71983248"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41DEBBDF-59FF-44B6-B29A-89A3ED318550"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "updateSearchResultsTableView(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "41DEBBDF-59FF-44B6-B29A-89A3ED318550 - 985f1cc78e55aa95"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchViewController.updateSearchResultsTableView(with: Swift.Array&lt;Monumental.Department&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "41DEBBDF-59FF-44B6-B29A-89A3ED318550 - 985f1cc78e55a9eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchViewController.updateSearchResultsTableView(with: Swift.Array&lt;Monumental.Department&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96DEA6E6-5CF5-4BA3-9795-490D304C83CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "updateSearchResults(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BA0597F-B509-4310-9D03-908E4BC896D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/SearchResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BA0597F-B509-4310-9D03-908E4BC896D7 - 38dbafe59b706e0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchResultsViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  uuid = "3BA0597F-B509-4310-9D03-908E4BC896D7 - 38dbafe59b706e45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchResultsViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1EBBDE3-401F-4B37-B598-2EDABE1DB0C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/SearchVC/SearchResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1EBBDE3-401F-4B37-B598-2EDABE1DB0C1 - 35ac07bb5575ebdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchResultsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchVC/SearchResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "E1EBBDE3-401F-4B37-B598-2EDABE1DB0C1 - 35ac07bb5575ebdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.SearchResultsViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/SearchVC/SearchResultsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "809BEBF4-0A2D-4A77-AE0C-7AB138AE85CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/SearchVC/SearchResultsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F95A0BB-816A-412C-ABE1-5739ED21EC6B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Model/Explore/ExploreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchData(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F95A0BB-816A-412C-ABE1-5739ED21EC6B - a3ad04a71f0f79fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Monumental.Explore&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Monumental.ExploreManager.fetchData(for: Swift.String) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Model/Explore/ExploreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "9F95A0BB-816A-412C-ABE1-5739ED21EC6B - a3ad04a71f0f79fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Monumental.Explore&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Monumental.ExploreManager.fetchData(for: Swift.String) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Model/Explore/ExploreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29B6CA9C-0302-47F0-9D5E-9DF46EA6E69E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "didRequestLandmarks(department:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29B6CA9C-0302-47F0-9D5E-9DF46EA6E69E - ad461ad7a05a3f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.didUpdateLocation(department: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "29B6CA9C-0302-47F0-9D5E-9DF46EA6E69E - ad461ad7a05a3fb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.didUpdateLocation(department: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "29B6CA9C-0302-47F0-9D5E-9DF46EA6E69E - 5897d8bddd763a4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.didRequestLandmarks(department: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "226"
+                  endingLineNumber = "226"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "29B6CA9C-0302-47F0-9D5E-9DF46EA6E69E - 5897d8bddd763aae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.didRequestLandmarks(department: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "225"
+                  endingLineNumber = "225"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "setUpFloatingPanel()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb202837f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb20283747"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb2028083b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb2028083b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb2028083b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "3785D794-D84D-4C20-BE1F-EEA1094B22DA - 7436cdfb20280a80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.setUpFloatingPanel() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B36CA7A-A9E2-4A05-8C43-6BB99AF7D479"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "089584E0-89E7-4444-B498-9ADC3EB87889"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/ContentTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "089584E0-89E7-4444-B498-9ADC3EB87889 - 9651989f0719b356"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.ContentTableViewController.tableView(_: __C.UITableView, didDeselectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/ContentTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "089584E0-89E7-4444-B498-9ADC3EB87889 - 63c6749d9ae6105a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.ContentTableViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/ContentTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36A5E89B-7439-4691-8603-F14CE238B05D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "36A5E89B-7439-4691-8603-F14CE238B05D - 5dbd71a19a1c6178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "36A5E89B-7439-4691-8603-F14CE238B05D - 5dbd71a19a1c6159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "MonumentDetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - 7b1fa7b9f1c56812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.selectedLandmark.getter : Swift.Optional&lt;Monumental.Landmark&gt;"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - e752eaa868ff9506"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.selectedLandmark.setter : Swift.Optional&lt;Monumental.Landmark&gt;"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - 5f8e076a9ff2c516"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.selectedLandmark.modify : Swift.Optional&lt;Monumental.Landmark&gt;"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - 8aee2cd637bffa4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.selectedLandmark.modify : Swift.Optional&lt;Monumental.Landmark&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - 1eb81f90b303c55e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Monumental.MonumentDetailsViewController"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "F02426A9-F3B9-42E0-887D-DE218D62CFDD - a2985b34dc9dedd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Monumental.MonumentDetailsViewController&gt;"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D9F3E51-35A8-4179-B634-1B558FAAA541"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/ContentTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D9F3E51-35A8-4179-B634-1B558FAAA541 - a1e61e44b7ea669c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.ContentTableViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/ContentTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "2D9F3E51-35A8-4179-B634-1B558FAAA541 - a1e61e44b7ea6643"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.ContentTableViewController.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/ContentTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "updateView(monument:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "948">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1092">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1572">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1756">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "467CDFC2-FAAE-4643-A73A-33B4F20608B6 - 485173b00882ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.updateView(monument: Swift.Optional&lt;Monumental.Landmark&gt;) -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "assignImageBasedOnText(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719 - 23b9e5ec1747bbff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.assignImageBasedOnText(Swift.String) -&gt; __C.UIImage"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719 - 23b9e5ec1747bbff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MonumentDetailsViewController.assignImageBasedOnText(Swift.String) -&gt; __C.UIImage"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E1FF211-1A51-41CF-AA8E-E472FFA6EA4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "centerMapOnLandmarks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6E1FF211-1A51-41CF-AA8E-E472FFA6EA4D - 27eabdf77ad764c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "6E1FF211-1A51-41CF-AA8E-E472FFA6EA4D - 27eabdf77ad764c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "6E1FF211-1A51-41CF-AA8E-E472FFA6EA4D - 27eabdf77ad764c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E7628DF-B43B-4673-8344-9148183D0F6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "centerMapOnLandmarks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E7628DF-B43B-4673-8344-9148183D0F6D - 27eabdf77ad76238"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "2388">
+               </Location>
+               <Location
+                  uuid = "9E7628DF-B43B-4673-8344-9148183D0F6D - 27eabdf77ad76238"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "2392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E763ADC-5161-455D-B179-8D55CCD16585"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Monumental/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "centerMapOnLandmarks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E763ADC-5161-455D-B179-8D55CCD16585 - 27eabdf77ad76320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "2476">
+               </Location>
+               <Location
+                  uuid = "2E763ADC-5161-455D-B179-8D55CCD16585 - 27eabdf77ad76320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "2480">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

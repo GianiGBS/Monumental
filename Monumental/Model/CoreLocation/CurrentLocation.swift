@@ -7,7 +7,9 @@
 
 import Foundation
 
-class CurrentLocation {
+struct CurrentLocation {
+
     // MARK: - Properties
-    
+    static var latitude = ""
+    static var longitude = ""
 }
