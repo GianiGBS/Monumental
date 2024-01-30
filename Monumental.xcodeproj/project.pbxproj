@@ -16,6 +16,13 @@
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
 		C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278624A2B55B048003005AC /* ContentTableViewController.swift */; };
 		C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */; };
+		C2D426802B603F8B007CEB97 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */; };
+		C2D426822B604061007CEB97 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426812B604061007CEB97 /* CoreDataManager.swift */; };
+		C2D426842B6040F5007CEB97 /* CoreDataMonument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426832B6040F5007CEB97 /* CoreDataMonument.swift */; };
+		C2D426882B62EA20007CEB97 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426872B62EA20007CEB97 /* FavoriteViewController.swift */; };
+		C2D4268C2B640DE2007CEB97 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4268B2B640DE2007CEB97 /* CoreDataStackTests.swift */; };
+		C2D4268F2B640E9A007CEB97 /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4268E2B640E9A007CEB97 /* CoreDataTests.swift */; };
+		C2D426912B65BD43007CEB97 /* MonumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426902B65BD43007CEB97 /* MonumentCollectionViewCell.swift */; };
 		C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */; };
 		C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868632AE6D2C700F3294C /* ExploreService.swift */; };
 		C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868652AE6D2DE00F3294C /* ExploreURL.swift */; };
@@ -60,6 +67,13 @@
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C278624A2B55B048003005AC /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
 		C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
+		C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C2D426812B604061007CEB97 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C2D426832B6040F5007CEB97 /* CoreDataMonument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMonument.swift; sourceTree = "<group>"; };
+		C2D426872B62EA20007CEB97 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		C2D4268B2B640DE2007CEB97 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
+		C2D4268E2B640E9A007CEB97 /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
+		C2D426902B65BD43007CEB97 /* MonumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2D868612AE6D27E00F3294C /* NetWorkManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManagement.swift; sourceTree = "<group>"; };
 		C2D868632AE6D2C700F3294C /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
 		C2D868652AE6D2DE00F3294C /* ExploreURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreURL.swift; sourceTree = "<group>"; };
@@ -135,6 +149,7 @@
 		C26FBF872AD716CA00E2220C /* MonumentalTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2D4268D2B640DF0007CEB97 /* CoreDataTest */,
 				C2D868892AF2AEA100F3294C /* ExploreTest */,
 				C2D8688F2B02901000F3294C /* CoreLocationTest */,
 			);
@@ -147,6 +162,7 @@
 				C26FBF7A2AD716C900E2220C /* Assets.xcassets */,
 				C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */,
 				C26FBF742AD716C800E2220C /* Main.storyboard */,
+				C2D426902B65BD43007CEB97 /* MonumentCollectionViewCell.swift */,
 				C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */,
 			);
 			path = View;
@@ -177,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				C26FBF772AD716C800E2220C /* Monumental.xcdatamodeld */,
+				C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */,
+				C2D426832B6040F5007CEB97 /* CoreDataMonument.swift */,
+				C2D426812B604061007CEB97 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -186,8 +205,18 @@
 			children = (
 				C278624A2B55B048003005AC /* ContentTableViewController.swift */,
 				C2D868A12B28ADEE00F3294C /* MonumentDetailsViewController.swift */,
+				C2D426872B62EA20007CEB97 /* FavoriteViewController.swift */,
 			);
 			name = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		C2D4268D2B640DF0007CEB97 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				C2D4268B2B640DE2007CEB97 /* CoreDataStackTests.swift */,
+				C2D4268E2B640E9A007CEB97 /* CoreDataTests.swift */,
+			);
+			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
 		C2D8686B2AE6D34500F3294C /* Explore */ = {
@@ -368,13 +397,18 @@
 			files = (
 				C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */,
 				C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */,
+				C2D426912B65BD43007CEB97 /* MonumentCollectionViewCell.swift in Sources */,
 				C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */,
+				C2D426822B604061007CEB97 /* CoreDataManager.swift in Sources */,
+				C2D426802B603F8B007CEB97 /* CoreDataStack.swift in Sources */,
 				C2D868682AE6D31900F3294C /* ExploreManager.swift in Sources */,
 				C2D868642AE6D2C700F3294C /* ExploreService.swift in Sources */,
 				C2D868702AE71BD900F3294C /* CoreLocationService.swift in Sources */,
 				C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */,
 				C2D868932B167D9C00F3294C /* Department.swift in Sources */,
+				C2D426882B62EA20007CEB97 /* FavoriteViewController.swift in Sources */,
 				C2D868662AE6D2DE00F3294C /* ExploreURL.swift in Sources */,
+				C2D426842B6040F5007CEB97 /* CoreDataMonument.swift in Sources */,
 				C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */,
 				C2D868622AE6D27E00F3294C /* NetWorkManagement.swift in Sources */,
 				C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */,
@@ -391,6 +425,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */,
+				C2D4268C2B640DE2007CEB97 /* CoreDataStackTests.swift in Sources */,
+				C2D4268F2B640E9A007CEB97 /* CoreDataTests.swift in Sources */,
 				C2D868882AF2100C00F3294C /* ExploreServiceTests.swift in Sources */,
 				C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */,
 				C2D8688E2B02717000F3294C /* CoreLocationServiceTests.swift in Sources */,

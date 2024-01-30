@@ -10,27 +10,32 @@ import UIKit
 class MonumentDetailsViewController: UIViewController {
 
     // MARK: - Outlet
-    @IBOutlet weak var monumImage: UIImageView!
-    @IBOutlet weak var monumName: UILabel!
 
+    @IBOutlet weak var monumImage: UIImageView!
+// Group Top
+    @IBOutlet weak var favButton: UIButton!
+// Type
+    @IBOutlet weak var monumName: UILabel!
+// Group 1
     @IBOutlet weak var monumReference: UILabel!
     @IBOutlet weak var monumStatus: UILabel!
-
+// Title
     @IBOutlet weak var monumTitle: UILabel!
-
+// Group 2
     @IBOutlet weak var monumDatation: UILabel!
     @IBOutlet weak var monumSiecle: UILabel!
-
+// Group 3
     @IBOutlet weak var monumDescription: UILabel!
     @IBOutlet weak var monumHistory: UILabel!
-
+// Group 4
     @IBOutlet weak var monumAdress: UILabel!
     @IBOutlet weak var monumLocation: UILabel!
-
+// Group Bottom
     @IBOutlet weak var monumDepartment: UILabel!
 
     // MARK: - Properties
     var selectedLandmark: Landmark?
+    private let coreDataModel = CoreDataManager()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -40,26 +45,55 @@ class MonumentDetailsViewController: UIViewController {
     }
 
     // MARK: - Actions
+    @IBAction func favButtonTapped(_sender: UIButton) {
+        save(monument: selectedLandmark)
+    }
+    @IBAction func getEtudeTapped(_sender: Any) {
+        guard let landmark = selectedLandmark,
+              let linkToEtude = landmark.lienVersLaBaseArchivMh,
+              let url = URL(string: linkToEtude)
+        else {
+            presentAlert(title: "Error", message: "Invalide recipe URL.")
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+//    @IBAction func showDirections() {
+//        // Vérifiez si les coordonnées du monument sont disponibles
+//        guard let monumentCoordinate = selectedLandmark?.coordonneesAuFormatWgs84 else {
+//            // Affichez un message d'erreur si les coordonnées ne sont pas disponibles
+//            showAlert(message: "Coordonnées du monument non disponibles.")
+//            return
+//        }
+//
+//        // Créez une destination avec les coordonnées du monument
+//        let destinationPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: monumentCoordinate.lat ?? 0, longitude: monumentCoordinate.lon ?? 0))
+//
+//        // Créez une carte avec la destination
+//        let mapItem = MKMapItem(placemark: destinationPlacemark)
+//        mapItem.name = selectedLandmark?.denominationDeLEdifice
+//
+//        // Configurez les options pour l'itinéraire
+//        let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDefault]
+//        mapItem.openInMaps(launchOptions: options)
+//    }
 
     // MARK: - Methods
-    func assignImageBasedOnText(_ text: String) -> UIImage {
-        let specificWords = ["café", "contrefort", "église", "fontaine", "hospice", "immeuble", "maison", "parc", "pont", "presbytère"]
-        let defaultImageName = "ruine"
-
-        guard let specificWord = specificWords.first(where: { text.lowercased().contains($0.lowercased()) }),
-           let specificImage = UIImage(named: specificWord) else {
-            return UIImage(named: defaultImageName) ?? UIImage()
-        }
-            return specificImage
-        }
-
+    /// Update View with monument's details
     func updateView(monument: Landmark?) {
-        guard let monument =  monument else {
+        guard let monument =  monument,
+        let reference = monument.reference else {
             print("L'objet Monument est nul.")
             return
         }
         // Head
         monumImage.image = assignImageBasedOnText(monument.denominationDeLEdifice ?? "")
+        if coreDataModel.checkIfItemExist(reference: reference) {
+            favButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        } else {
+            favButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        }
+        // Type
         monumName.text = monument.denominationDeLEdifice ?? "Non renseigné"
         // Groupe 1
         monumReference.text = monument.reference ?? "Non renseigné"
@@ -78,5 +112,39 @@ class MonumentDetailsViewController: UIViewController {
         // End
         monumDepartment.text = monument.departementEnLettres?.first ?? "Non renseigné"
         }
-        
+    /// Checking fav button
+    func checkFavButton() {
+        if let monumentReference = selectedLandmark?.reference, coreDataModel.checkIfItemExist(reference: monumentReference) {
+            favButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        } else {
+            favButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        }
+    }
+    /// Save monument in CoreData
+    private func save(monument: Landmark?) {
+        if let monumentReference = selectedLandmark?.reference, let  monument = selectedLandmark {
+            if coreDataModel.checkIfItemExist(reference: monumentReference) {
+                do {
+                    try coreDataModel.deleteOneFavMonument(reference: monumentReference)
+                    favButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+                } catch {
+                    print(error)
+                }
+                print("Monument Deleted")
+            } else {
+                do {
+                    try coreDataModel.addMonumentToFav(monument: monument)
+                    favButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+                } catch {
+                    print(error.localizedDescription)
+                }
+                print("Monument Saved")
+            }
+        }
+    }
+    func presentAlert(title: String, message: String) {
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alertVC, animated: true, completion: nil)
+    }
 }

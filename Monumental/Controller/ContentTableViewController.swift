@@ -13,7 +13,6 @@ class ContentTableViewController: UITableViewController {
     
 
     // MARK: - Properties
-    var department = ""
     var monuments: [Landmark]? = []
     let cellIdentifier = "MonumentCell"
     var selectedRow = 0
@@ -62,7 +61,6 @@ class ContentTableViewController: UITableViewController {
                                subtitle: subtitle)
 
         return monumentCell
-        
     }
     // MARK: - TableView Delegate
     // MARK: Did Select Row At

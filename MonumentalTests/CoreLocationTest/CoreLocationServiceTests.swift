@@ -16,7 +16,7 @@ final class CoreLocationServiceTests: XCTestCase {
     // MARK: - Setup and Teardown
         override func setUp() {
             super.setUp()
-            locationService = CoreLocationService.sharedInstance
+            locationService = CoreLocationService.shared
         }
 
         override func tearDown() {

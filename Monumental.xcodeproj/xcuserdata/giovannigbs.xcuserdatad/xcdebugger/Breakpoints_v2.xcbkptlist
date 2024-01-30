@@ -440,8 +440,8 @@
             filePath = "Monumental/Controller/ContentTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -488,8 +488,8 @@
             filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -536,8 +536,8 @@
             filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "MonumentDetailsViewController"
             landmarkType = "3">
             <Locations>
@@ -644,8 +644,8 @@
             filePath = "Monumental/Controller/ContentTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
             <Locations>
@@ -692,8 +692,8 @@
             filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "updateView(monument:)"
             landmarkType = "7">
             <Locations>
@@ -928,56 +928,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Monumental/Controller/MonumentDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "assignImageBasedOnText(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719 - 23b9e5ec1747bbff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Monumental.MonumentDetailsViewController.assignImageBasedOnText(Swift.String) -&gt; __C.UIImage"
-                  moduleName = "Monumental"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "624">
-               </Location>
-               <Location
-                  uuid = "CF808608-BCF4-482B-8EFF-BCDD81524719 - 23b9e5ec1747bbff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Monumental.MonumentDetailsViewController.assignImageBasedOnText(Swift.String) -&gt; __C.UIImage"
-                  moduleName = "Monumental"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MonumentDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6E1FF211-1A51-41CF-AA8E-E472FFA6EA4D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Monumental/Controller/MapViewController.swift"
@@ -1040,7 +992,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9E7628DF-B43B-4673-8344-9148183D0F6D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Monumental/Controller/MapViewController.swift"
@@ -1080,6 +1032,21 @@
                   startingLineNumber = "119"
                   endingLineNumber = "119"
                   offsetFromSymbolStart = "2392">
+               </Location>
+               <Location
+                  uuid = "9E7628DF-B43B-4673-8344-9148183D0F6D - 27eabdf77ad76238"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "2420">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1128,6 +1095,21 @@
                   startingLineNumber = "127"
                   endingLineNumber = "127"
                   offsetFromSymbolStart = "2480">
+               </Location>
+               <Location
+                  uuid = "2E763ADC-5161-455D-B179-8D55CCD16585 - 27eabdf77ad76320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Monumental.MapViewController.centerMapOnLandmarks() -&gt; ()"
+                  moduleName = "Monumental"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannigbs/Documents/%5B02%5D%20Work/Etudes/OpenClassrooms/Projet%2012/Mission/Monumental/Monumental/Controller/MapViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "2508">
                </Location>
             </Locations>
          </BreakpointContent>

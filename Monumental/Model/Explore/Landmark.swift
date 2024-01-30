@@ -13,6 +13,7 @@ struct Landmark: Decodable {
     let denominationDeLEdifice: String?
     let descriptionDeLEdifice: String?
     let historique: String?
+    let lienVersLaBaseArchivMh: String?
 
     let region: [String]?
     let departementEnLettres: [String]?
@@ -31,6 +32,7 @@ struct Landmark: Decodable {
         case denominationDeLEdifice = "denomination_de_l_edifice"
         case descriptionDeLEdifice = "description_de_l_edifice"
         case historique
+        case lienVersLaBaseArchivMh = "lien_vers_la_base_archiv_mh"
         
         case region
         case departementEnLettres = "departement_en_lettres"
