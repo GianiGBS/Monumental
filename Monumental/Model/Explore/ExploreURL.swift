@@ -3,7 +3,6 @@
 //  Monumental
 //
 //  Created by Giovanni Gabriel on 23/10/2023.
-// swiftlint:disable line_length
 
 import Foundation
 

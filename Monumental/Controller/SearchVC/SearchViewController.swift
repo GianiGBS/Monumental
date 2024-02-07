@@ -43,7 +43,7 @@ class SearchViewController: UIViewController {
     }
     func restoreCurrentDataSource() {
         filteredDepartments = allDepartments
-        tableView.reloadData() // mise à jour de la table view
+        tableView.reloadData()
     }
 }
 
@@ -66,14 +66,13 @@ extension SearchViewController: UISearchResultsUpdating {
             }
         }
         tableView.reloadData()
-//        updateSearchResultsTableView(with: filteredDepartments)
     }
 
 // MARK: Update AutoCompletion Table
     func updateSearchResultsTableView(with departments: [Department]) {
         // Mise à jour des résultats de recherche avec les départements filtrés.
         filteredDepartments = departments
-        tableView.reloadData() // mise à jour de la table view
+        tableView.reloadData()
     }
 }
 
@@ -150,6 +149,6 @@ extension SearchViewController: UITableViewDelegate {
         // Send selected department to MapView
         delegate?.didRequestLandmarks(department: selectedDepartment.name)
         // dismiss SearchView
-        delegate?.dismissSearchModal()
+        delegate?.dismissViewModal()
     }
 }

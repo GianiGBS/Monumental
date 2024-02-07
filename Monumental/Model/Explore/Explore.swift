@@ -11,7 +11,7 @@ import Foundation
 struct Explore: Decodable {
     let totalCount: Int?
     let results: [Landmark]?
-    
+
     enum CodingKeys: String, CodingKey {
             case totalCount = "total_count"
             case results

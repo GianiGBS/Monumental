@@ -3,7 +3,6 @@
 //  Monumental
 //
 //  Created by Giovanni Gabriel on 11/10/2023.
-// swiftlint:disable unused_closure_parameter
 
 import UIKit
 import CoreData

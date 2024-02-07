@@ -35,7 +35,9 @@ class MonumentDetailsViewController: UIViewController {
 
     // MARK: - Properties
     var selectedLandmark: Landmark?
+    private let segueIdentifier = "detailsToMap"
     private let coreDataModel = CoreDataManager()
+    public weak var delegate: MapViewDelegate?
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -45,10 +47,10 @@ class MonumentDetailsViewController: UIViewController {
     }
 
     // MARK: - Actions
-    @IBAction func favButtonTapped(_sender: UIButton) {
+    @IBAction func favButtonTapped( sender: UIButton) {
         save(monument: selectedLandmark)
     }
-    @IBAction func getEtudeTapped(_sender: Any) {
+    @IBAction func getEtudeTapped( sender: Any) {
         guard let landmark = selectedLandmark,
               let linkToEtude = landmark.lienVersLaBaseArchivMh,
               let url = URL(string: linkToEtude)
@@ -58,25 +60,13 @@ class MonumentDetailsViewController: UIViewController {
         }
         UIApplication.shared.open(url)
     }
-//    @IBAction func showDirections() {
-//        // Vérifiez si les coordonnées du monument sont disponibles
-//        guard let monumentCoordinate = selectedLandmark?.coordonneesAuFormatWgs84 else {
-//            // Affichez un message d'erreur si les coordonnées ne sont pas disponibles
-//            showAlert(message: "Coordonnées du monument non disponibles.")
-//            return
-//        }
-//
-//        // Créez une destination avec les coordonnées du monument
-//        let destinationPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: monumentCoordinate.lat ?? 0, longitude: monumentCoordinate.lon ?? 0))
-//
-//        // Créez une carte avec la destination
-//        let mapItem = MKMapItem(placemark: destinationPlacemark)
-//        mapItem.name = selectedLandmark?.denominationDeLEdifice
-//
-//        // Configurez les options pour l'itinéraire
-//        let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDefault]
-//        mapItem.openInMaps(launchOptions: options)
-//    }
+    @IBAction func showDirections() {
+        guard let landmark = selectedLandmark else {
+                return
+            }
+            delegate?.showDirections(for: landmark)
+        performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
 
     // MARK: - Methods
     /// Update View with monument's details
@@ -114,7 +104,8 @@ class MonumentDetailsViewController: UIViewController {
         }
     /// Checking fav button
     func checkFavButton() {
-        if let monumentReference = selectedLandmark?.reference, coreDataModel.checkIfItemExist(reference: monumentReference) {
+        if let monumentReference = selectedLandmark?.reference,
+            coreDataModel.checkIfItemExist(reference: monumentReference) {
             favButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
         } else {
             favButton.setImage(UIImage(systemName: "bookmark"), for: .normal)

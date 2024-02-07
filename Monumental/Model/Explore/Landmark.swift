@@ -25,7 +25,7 @@ struct Landmark: Decodable {
     let communeFormeEditoriale: String?
 
     let coordonneesAuFormatWgs84: CoordonneesWgs84?
-    
+
     enum CodingKeys: String, CodingKey {
         case reference
         case datationDeLEdifice = "datation_de_l_edifice"
@@ -33,17 +33,16 @@ struct Landmark: Decodable {
         case descriptionDeLEdifice = "description_de_l_edifice"
         case historique
         case lienVersLaBaseArchivMh = "lien_vers_la_base_archiv_mh"
-        
+
         case region
         case departementEnLettres = "departement_en_lettres"
-        
+
         case formatAbregeDuSiecleDeConstruction = "format_abrege_du_siecle_de_construction"
         case statutJuridiqueDeLEdifice = "statut_juridique_de_l_edifice"
         case titreEditorialDeLaNotice = "titre_editorial_de_la_notice"
         case adresseFormeEditoriale = "adresse_forme_editoriale"
         case communeFormeEditoriale = "commune_forme_editoriale"
-                
-        
+
         case coordonneesAuFormatWgs84 = "coordonnees_au_format_wgs84"
     }
 }
@@ -53,4 +52,3 @@ struct CoordonneesWgs84: Decodable {
     let lon: Double?
     let lat: Double?
 }
-

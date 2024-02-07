@@ -3,8 +3,7 @@
 //  Monumental
 //
 //  Created by Giovanni Gabriel on 27/01/2024.
-//
-
+// swiftLint
 import UIKit
 
 class MonumentCollectionViewCell: UICollectionViewCell {
@@ -19,7 +18,9 @@ class MonumentCollectionViewCell: UICollectionViewCell {
     // MARK: - Navigation
 
     // MARK: - Methods
-    func configure(image: UIImage, index: String, denomination: String, adress: String, commune: String, department: String) {
+    func configure(image: UIImage, index: String,
+                   denomination: String, adress: String,
+                   commune: String, department: String) {
         monumentImage.image = image
         positionLabel.text = index
         positionLabel.accessibilityLabel = "En position numéro \(index)"
@@ -31,6 +32,5 @@ class MonumentCollectionViewCell: UICollectionViewCell {
         communeLabel.accessibilityLabel = "Dans la commune du \(commune)"
         departmentLAbel.text = department
         denominationLabel.accessibilityLabel = "Dans le department de \(department)"
-        
     }
 }

@@ -20,12 +20,11 @@ class MapViewController: UIViewController {
     private let searchView = SearchViewController()
     public weak var delegate: MapViewDelegate?
     private let landmarkModel = ExploreManager()
-//    private var contentPanelVC = ContentTableViewController()
     let floatingPanelController = FloatingPanelController()
     let floatingPanelStoryboardID = "tableViewFloatingPanel"
     let modalStoryboardID = "searchFloatingPanel"
     var landmarks: [Landmark]? = []
-    
+
     let defaultHeight: CGFloat = 300
 
     // MARK: - Lifecycle
@@ -36,10 +35,6 @@ class MapViewController: UIViewController {
         searchView.delegate = self
         getLocation()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-//        setUpFloatingPanel()
-    }
 
     // MARK: - Action
     @IBAction func searchButtonTapped(_ sender: Any) {
@@ -49,6 +44,15 @@ class MapViewController: UIViewController {
         // Déterminer département
         centerMapOnUserLocation(mapView: mapView)
         didRequestLandmarks(department: CoreLocationService.shared.currentDepartment)
+    }
+    @objc func directionsButtonTapped() {
+        // Récupérez l'annotation sélectionnée
+        if let selectedAnnotation = mapView.selectedAnnotations.first as? MKPointAnnotation {
+            // Trouvez le monument correspondant et déclenchez la fonction showDirections
+            if let landmark = landmarks?.first(where: { $0.denominationDeLEdifice == selectedAnnotation.title }) {
+                showDirections(for: landmark)
+            }
+        }
     }
     // MARK: - Methods
     // MARK: SearchView
@@ -100,84 +104,27 @@ class MapViewController: UIViewController {
         guard let monuments = landmarks, !monuments.isEmpty else {
                 return
             }
-
+        // Initiation region bounds with first landmark
             var bounds = MKCoordinateRegion()
-
-            if let firstCoordinate = monuments.first?.coordonneesAuFormatWgs84 {
-                bounds = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: firstCoordinate.lat ?? 0, longitude: firstCoordinate.lon ?? 0),
-                                            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
-            }
-
-            for coordinate in monuments.compactMap({ $0.coordonneesAuFormatWgs84 }) {
-                bounds.center.latitude += coordinate.lat ?? 0
-                bounds.center.longitude += coordinate.lon ?? 0
-                bounds.span.latitudeDelta = max(bounds.span.latitudeDelta, abs(coordinate.lat ?? 0 - bounds.center.latitude) * 1.5)
-                bounds.span.longitudeDelta = max(bounds.span.longitudeDelta, abs(coordinate.lon ?? 0 - bounds.center.longitude) * 1.5)
-            }
-
-            // Vérification pour éviter une division par zéro
-            guard monuments.count > 0 else {
-                return
-            }
-
-            // Calcul de la moyenne des coordonnées
-            bounds.center.latitude /= Double(monuments.count)
-            bounds.center.longitude /= Double(monuments.count)
+        if let firstCoordinate = monuments.first?.coordonneesAuFormatWgs84 {
+            bounds = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: firstCoordinate.lat ?? 0, longitude: firstCoordinate.lon ?? 0),
+                                        span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
 
             mapView.setRegion(bounds, animated: true)
         }
-//                guard let monuments = landmarks, !monuments.isEmpty else {
-//                        return
-//                    }
-//        
-//                    var bounds = MKCoordinateRegion()
-//        
-//                    for coordinate in monuments.compactMap({ $0.coordonneesAuFormatWgs84 }) {
-//                        bounds.center.latitude += coordinate.lat ?? 0
-//                        bounds.center.longitude += coordinate.lon ?? 0
-//                    }
-//        
-//                    // Vérification pour éviter une division par zéro
-//                    guard monuments.count > 0 else {
-//                        return
-//                    }
-//        
-//                    // Calcul de la moyenne des coordonnées
-//                    bounds.center.latitude /= Double(monuments.count)
-//                    bounds.center.longitude /= Double(monuments.count)
-//        
-//                    mapView.setRegion(bounds, animated: true)
-//                    }
-        
-//        if let monuments = landmarks {
-//            guard !monuments.isEmpty, let firstCoordinate = monuments.first?.coordonneesAuFormatWgs84 else {
-//                return
-//            }
-//            
-//            var bounds = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: firstCoordinate.lat ?? 0, longitude: firstCoordinate.lon ?? 0),
-//                                            span: MKCoordinateSpan(latitudeDelta: 0, longitudeDelta: 0))
-//            
-//            for coordinate in monuments.compactMap({ $0.coordonneesAuFormatWgs84 }) {
-//                bounds.center.latitude += coordinate.lat ?? 0
-//                bounds.center.longitude += coordinate.lon ?? 0
-//                bounds.span.latitudeDelta = max(bounds.span.latitudeDelta, abs(coordinate.lat ?? 0 - bounds.center.latitude) * 2)
-//                bounds.span.longitudeDelta = max(bounds.span.longitudeDelta, abs(coordinate.lon ?? 0 - bounds.center.longitude) * 2)
-//            }
-//            
-//            mapView.setRegion(bounds, animated: true)
-//        }
-//    }
+        }
     func addLandmarkMarkers(to mapView: MKMapView) {
         mapView.removeAnnotations(mapView.annotations)
         if let monuments = landmarks {
-            for landmark in monuments {
+            for (index, landmark) in monuments.enumerated() {
                 if let coordonates = landmark.coordonneesAuFormatWgs84,
                    let latitude = coordonates.lat,
                    let longitude = coordonates.lon {
 
                     let annotation = MKPointAnnotation()
                     annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                    annotation.title = landmark.denominationDeLEdifice
+                    annotation.title = "\(index + 1). \(landmark.denominationDeLEdifice ?? "Non renseigné")"
+                    annotation.subtitle = landmark.titreEditorialDeLaNotice
 
                     print("Lat: \(annotation.coordinate.latitude), Lon: \(annotation.coordinate.longitude)")
                     mapView.addAnnotation(annotation)
@@ -218,6 +165,10 @@ extension MapViewController: MKMapViewDelegate {
                 annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView.canShowCallout = true
                 annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//                // Ajoutez un bouton à la bulle d'info de l'annotation
+//                        let directionsButton = UIButton(type: .detailDisclosure)
+//                        directionsButton.addTarget(self, action: #selector(directionsButtonTapped), for: .touchUpInside)
+//                        annotationView.rightCalloutAccessoryView = directionsButton
             }
             return annotationView
         }
@@ -261,7 +212,6 @@ extension MapViewController: ViewDelegate {
         // recentrer la carte
         centerMapOnLandmarks()
         setUpFloatingPanel()
-        
     }
     func fetchDataInProgress(shown: Bool) {
     }
@@ -275,10 +225,23 @@ extension MapViewController: MapViewDelegate {
         if let department = department {
             // fetch les monuments
             landmarkModel.fetchData(for: department)
-            
         }
     }
-    func dismissSearchModal() {
+    func showDirections(for landmark: Landmark?) {
+            guard let monumentCoordinate = landmark?.coordonneesAuFormatWgs84 else {
+                presentAlert(title: "Error", message: "Coordonnées du monument non disponibles.")
+                return
+            }
+
+            let destinationPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: monumentCoordinate.lat ?? 0, longitude: monumentCoordinate.lon ?? 0))
+
+            let mapItem = MKMapItem(placemark: destinationPlacemark)
+            mapItem.name = landmark?.denominationDeLEdifice
+
+            let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDefault]
+            mapItem.openInMaps(launchOptions: options)
+        }
+    func dismissViewModal() {
         dismiss(animated: true, completion: nil)
     }
 }

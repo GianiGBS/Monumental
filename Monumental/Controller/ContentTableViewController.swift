@@ -8,9 +8,8 @@
 import UIKit
 
 class ContentTableViewController: UITableViewController {
-    
+
     // MARK: - Outlets
-    
 
     // MARK: - Properties
     var monuments: [Landmark]? = []
@@ -19,11 +18,8 @@ class ContentTableViewController: UITableViewController {
     private let segueIdentifier = "tableViewToDetails"
 
     // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == segueIdentifier, 
+        if segue.identifier == segueIdentifier,
             let detailVC =  segue.destination as? MonumentDetailsViewController,
             let selectedLandmark = monuments?[selectedRow] {
                 detailVC.selectedLandmark = selectedLandmark
@@ -43,20 +39,22 @@ class ContentTableViewController: UITableViewController {
     }
     // MARK: Cell for Row At
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let monumentCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MonumentTableViewCell
-        else { 
+        guard let monumentCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
+                                                               for: indexPath) as? MonumentTableViewCell
+        else {
             print("Erreur: Impossible de créer une cellule MonumentTableViewCell")
+
             return UITableViewCell()
         }
         guard let monument = monuments?[indexPath.row],
               let title = monument.titreEditorialDeLaNotice,
               let subtitle = monument.denominationDeLEdifice
         else {return monumentCell}
-        
+
         let index = "\(indexPath.row + 1)."
 
         // Configuration of monumentCell
-        monumentCell.configure(index: index, 
+        monumentCell.configure(index: index,
                                title: title,
                                subtitle: subtitle)
 

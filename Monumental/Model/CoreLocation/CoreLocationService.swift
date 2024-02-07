@@ -36,7 +36,6 @@ class CoreLocationService: NSObject, CLLocationManagerDelegate {
 
                 let dispatchGroup = DispatchGroup()
                 dispatchGroup.enter()
-                
                 // Call to get departement from location
                 getDepartmentName(for: location) { departmentName, error in
                     if let department = departmentName {

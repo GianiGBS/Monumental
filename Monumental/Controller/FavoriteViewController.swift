@@ -12,7 +12,7 @@ class FavoriteViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var containerView: UIView!
-    
+
     // MARK: - Properties
     var favMonuments: [Landmark]? = []
     let cellIdentifier = "FavMonumentCell"
@@ -54,7 +54,7 @@ class FavoriteViewController: UIViewController {
 //            containerView.isHidden = false
         }
     }
-    
+
 }
 // MARK: - CollectionView data source
 extension FavoriteViewController: UICollectionViewDataSource {
@@ -63,8 +63,10 @@ extension FavoriteViewController: UICollectionViewDataSource {
         return favMonuments?.count ?? 0
     }
     // MARK: Cell for Item At
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let monumentCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? MonumentCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let monumentCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier,
+                                                                    for: indexPath) as? MonumentCollectionViewCell
         else {
             print("Erreur: Impossible de créer une cellule MonumentCollectionViewCell")
             return UICollectionViewCell()
@@ -79,7 +81,7 @@ extension FavoriteViewController: UICollectionViewDataSource {
 
         let index = "\(indexPath.item + 1)."
         let image = assignImageBasedOnText(monument.denominationDeLEdifice ?? "")
-        
+
         monumentCell.configure(image: image,
                                index: index,
                                denomination: denomination,

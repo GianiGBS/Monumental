@@ -298,6 +298,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C2D426972B731645007CEB97 /* PBXTargetDependency */,
 			);
 			name = Monumental;
 			packageProductDependencies = (
@@ -357,7 +358,8 @@
 			packageReferences = (
 				C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C2D8689D2B1FA88200F3294C /* XCRemoteSwiftPackageReference "FloatingPanel" */,
-				C2BA10762B55EA33004B715F /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C2D426952B731625007CEB97 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = C26FBF6C2AD716C800E2220C /* Products */;
 			projectDirPath = "";
@@ -440,6 +442,10 @@
 			isa = PBXTargetDependency;
 			target = C26FBF6A2AD716C800E2220C /* Monumental */;
 			targetProxy = C26FBF852AD716CA00E2220C /* PBXContainerItemProxy */;
+		};
+		C2D426972B731645007CEB97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = C2D426962B731645007CEB97 /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -704,7 +710,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C2BA10762B55EA33004B715F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+		C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+		C2D426952B731625007CEB97 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint";
 			requirement = {
@@ -731,6 +745,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C2D426962B731645007CEB97 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2D426952B731625007CEB97 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
 		C2D8687D2AF150FE00F3294C /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C2D8687C2AF150FE00F3294C /* XCRemoteSwiftPackageReference "Alamofire" */;

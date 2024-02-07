@@ -17,7 +17,8 @@ protocol ViewDelegate: AnyObject {
 }
 protocol MapViewDelegate: AnyObject {
     func didRequestLandmarks(department: String?)
-    func dismissSearchModal()
+    func showDirections(for landmark: Landmark?)
+    func dismissViewModal()
 }
 protocol CorelocationServiceDelegate: AnyObject {
     func didUpdateLocation(departement: String?)
@@ -31,7 +32,11 @@ protocol AFSession {
 // MARK: - Function
 /// Update View with monument's image
 func assignImageBasedOnText(_ text: String) -> UIImage {
-    let specificWords = ["café", "contrefort", "église", "fontaine", "hospice", "immeuble", "maison", "parc", "pont", "presbytère"]
+    let specificWords = ["café", "contrefort",
+                         "église", "fontaine",
+                         "hospice", "immeuble",
+                         "maison", "parc",
+                         "pont", "presbytère"]
     let defaultImageName = "ruine"
 
     guard let specificWord = specificWords.first(where: { text.lowercased().contains($0.lowercased()) }),

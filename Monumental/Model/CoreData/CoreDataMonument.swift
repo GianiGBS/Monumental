@@ -8,4 +8,4 @@
 import Foundation
 import CoreData
 
-//class CoreDataMonument: NSManagedObject {}
+// class CoreDataMonument: NSManagedObject {}

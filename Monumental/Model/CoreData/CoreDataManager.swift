@@ -9,26 +9,26 @@ import Foundation
 import CoreData
 
 class CoreDataManager {
-    
+
     // MARK: - Properties
     var favMonuments: [Landmark] = []
     private let coreDataStack: CoreDataStack
     private let request: NSFetchRequest<CoreDataMonument> = CoreDataMonument.fetchRequest()
     public weak var delegate: ViewDelegate?
-    
+
     // MARK: - Init
     init(coreDataStack: CoreDataStack = CoreDataStack.sharedInstance) {
         self.coreDataStack = coreDataStack
     }
     // MARK: - Methods
-    
+
     // MARK: Get all monuments
     func fetchFavMonuments() -> [Landmark] {
         favMonuments.removeAll()
         do {
             let coreDataMonuments = try coreDataStack.viewContext.fetch(request)
-            favMonuments = coreDataMonuments.compactMap({convertCoreDataMonumentToMonument($0)}) }
-        catch {
+            favMonuments = coreDataMonuments.compactMap({convertCoreDataMonumentToMonument($0)})
+        } catch {
             delegate?.presentAlert(title: "Erreur", message: "Echec lors de la recupération des monuments")
         }
         return favMonuments
@@ -130,7 +130,8 @@ class CoreDataManager {
                         datationDeLEdifice: coreDataMonument.datationDeLEdifice ?? "",
                         denominationDeLEdifice: coreDataMonument.denominationDeLEdifice ?? "",
                         descriptionDeLEdifice: coreDataMonument.descriptionDeLEdifice ?? "",
-                        historique: coreDataMonument.historique ?? "", lienVersLaBaseArchivMh: coreDataMonument.lienVersLaBaseArchivMh ?? "",
+                        historique: coreDataMonument.historique ?? "",
+                        lienVersLaBaseArchivMh: coreDataMonument.lienVersLaBaseArchivMh ?? "",
                         region: [coreDataMonument.region ?? ""],
                         departementEnLettres: [coreDataMonument.departementEnLettres ?? ""],
                         formatAbregeDuSiecleDeConstruction: coreDataMonument.formatAbregeDuSiecleDeConstruction ?? "",
@@ -158,4 +159,3 @@ enum CoreDataError: Error {
         }
     }
 }
-
