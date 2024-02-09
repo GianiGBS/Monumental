@@ -46,12 +46,12 @@ class FavoriteViewController: UIViewController {
         let fetchedMonuments = coreDataModel.fetchFavMonuments()
         if !fetchedMonuments.isEmpty {
             // Show ListTableView with fav
-//            containerView.isHidden = true
+            containerView.isHidden = true
             favMonuments = fetchedMonuments
             collectionView.reloadData()
         } else {
             // Show Empty FavoriteViewController
-//            containerView.isHidden = false
+            containerView.isHidden = false
         }
     }
 

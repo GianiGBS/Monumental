@@ -18,6 +18,7 @@ class MonumentCollectionViewCell: UICollectionViewCell {
     // MARK: - Navigation
 
     // MARK: - Methods
+    // swiftlint:disable function_parameter_count
     func configure(image: UIImage, index: String,
                    denomination: String, adress: String,
                    commune: String, department: String) {
@@ -33,4 +34,5 @@ class MonumentCollectionViewCell: UICollectionViewCell {
         departmentLAbel.text = department
         denominationLabel.accessibilityLabel = "Dans le department de \(department)"
     }
+    // swiftlint:enable function_parameter_count
 }

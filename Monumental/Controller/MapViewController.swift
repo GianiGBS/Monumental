@@ -4,7 +4,7 @@
 //
 //  Created by Giovanni Gabriel on 04/12/2023.
 //
-// swiftlint:disable line_length
+
 import UIKit
 import MapKit
 import FloatingPanel
@@ -41,14 +41,14 @@ class MapViewController: UIViewController {
         presentSearchModal()
     }
     @IBAction func showNearBy() {
-        // Déterminer département
+        // Get Department
         centerMapOnUserLocation(mapView: mapView)
         didRequestLandmarks(department: CoreLocationService.shared.currentDepartment)
     }
     @objc func directionsButtonTapped() {
-        // Récupérez l'annotation sélectionnée
+        // Select Annotation
         if let selectedAnnotation = mapView.selectedAnnotations.first as? MKPointAnnotation {
-            // Trouvez le monument correspondant et déclenchez la fonction showDirections
+            // Found monument that launch func showDirections
             if let landmark = landmarks?.first(where: { $0.denominationDeLEdifice == selectedAnnotation.title }) {
                 showDirections(for: landmark)
             }
@@ -95,7 +95,8 @@ class MapViewController: UIViewController {
             return
         }
 
-        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: coordinate.lat ?? 0, longitude: coordinate.lon ?? 0),
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: coordinate.lat ?? 0,
+                                                                       longitude: coordinate.lon ?? 0),
                                         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
 
         mapView.setRegion(region, animated: true)
@@ -107,7 +108,8 @@ class MapViewController: UIViewController {
         // Initiation region bounds with first landmark
             var bounds = MKCoordinateRegion()
         if let firstCoordinate = monuments.first?.coordonneesAuFormatWgs84 {
-            bounds = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: firstCoordinate.lat ?? 0, longitude: firstCoordinate.lon ?? 0),
+            bounds = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: firstCoordinate.lat ?? 0,
+                                                                       longitude: firstCoordinate.lon ?? 0),
                                         span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
 
             mapView.setRegion(bounds, animated: true)
@@ -143,7 +145,8 @@ class MapViewController: UIViewController {
     func setUpFloatingPanel() {
         // Initialize a `FloatingPanelController` object.
         floatingPanelController.delegate = self
-        let contentPanelVC = storyboard?.instantiateViewController(identifier: floatingPanelStoryboardID) as? ContentTableViewController
+        let contentPanelVC = storyboard?.instantiateViewController(identifier: floatingPanelStoryboardID)
+        as? ContentTableViewController
         floatingPanelController.set(contentViewController: contentPanelVC)
         floatingPanelController.addPanel(toParent: self)
         contentPanelVC?.monuments = landmarkModel.monuments
@@ -158,22 +161,26 @@ extension MapViewController: MKMapViewDelegate {
             let identifier = "LandmarkMarker"
             var annotationView: MKMarkerAnnotationView
 
-            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView {
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+                as? MKMarkerAnnotationView {
                 dequeuedView.annotation = annotation
                 annotationView = dequeuedView
             } else {
                 annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView.canShowCallout = true
                 annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//                // Ajoutez un bouton à la bulle d'info de l'annotation
+//                // Add a button to annotation's bubble
 //                        let directionsButton = UIButton(type: .detailDisclosure)
-//                        directionsButton.addTarget(self, action: #selector(directionsButtonTapped), for: .touchUpInside)
+//                        directionsButton.addTarget(self, action: #selector(directionsButtonTapped),
+//                                                   for: .touchUpInside)
 //                        annotationView.rightCalloutAccessoryView = directionsButton
             }
             return annotationView
         }
 
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    func mapView(_ mapView: MKMapView,
+                 annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
         if let monuments = landmarks {
             if control == view.rightCalloutAccessoryView {
                 // Handle the tap on the callout button (show details, open new screen, etc.)
@@ -188,19 +195,6 @@ extension MapViewController: MKMapViewDelegate {
 
 // MARK: - FloatingPanel - Delegate
 extension MapViewController: FloatingPanelControllerDelegate {
-    func floatingPanelWillBeginDragging(_ fpc: FloatingPanelController) {
-            // Handle any actions when the user starts dragging the Floating Panel
-//        let currentHeight = fpc.surfaceView.frame.height
-//        adjustScrollDirection(for: currentHeight)
-        }
-//    func adjustScrollDirection(for floatingPanelHeight: CGFloat) {
-//        guard let contentPanelVC = contentPanelVC else { return }
-//        if floatingPanelHeight > defaultHeight {
-//            contentPanelVC.collectionView.isScrollEnabled = true // Activer le défilement vertical
-//        } else {
-//            contentPanelVC.collectionView.isScrollEnabled = false // Désactiver le défilement vertical
-//        }
-//    }
 }
 
 // MARK: - Explore - Delegate
@@ -233,7 +227,9 @@ extension MapViewController: MapViewDelegate {
                 return
             }
 
-            let destinationPlacemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: monumentCoordinate.lat ?? 0, longitude: monumentCoordinate.lon ?? 0))
+            let destinationPlacemark = MKPlacemark(coordinate:
+                                                    CLLocationCoordinate2D(latitude: monumentCoordinate.lat ?? 0,
+                                                                           longitude: monumentCoordinate.lon ?? 0))
 
             let mapItem = MKMapItem(placemark: destinationPlacemark)
             mapItem.name = landmark?.denominationDeLEdifice

@@ -11,7 +11,9 @@ class ExploreURL {
 
     // MARK: - Properties
     static let baseURL = "data.culture.gouv.fr"
+    // swiftlint:disable line_length
     static let path = "/api/explore/v2.1/catalog/datasets/liste-des-immeubles-proteges-au-titre-des-monuments-historiques/records"
+    // swiftlint:enable line_length
     static let limit = "20"
     static let refineKey = "departement_en_lettres"
 
