@@ -74,7 +74,7 @@ class MapViewController: UIViewController {
     }
     // MARK: - MapView
     func getLocation() {
-        // Géolocalise l'utilisateur
+        // Get user location
         CoreLocationService.shared.getLocation()
     }
     func setupMapView() {
