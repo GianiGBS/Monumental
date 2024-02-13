@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDliq2jH_ytGA3g9KOKtHCnyt_L3pBYUZo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>512690705587</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>StudioCreoliste.Monumental</string>
+	<key>PROJECT_ID</key>
+	<string>monumental-7cbba</string>
+	<key>STORAGE_BUCKET</key>
+	<string>monumental-7cbba.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:512690705587:ios:67f72250d5c8bb6be60cc6</string>
+</dict>
+</plist>
