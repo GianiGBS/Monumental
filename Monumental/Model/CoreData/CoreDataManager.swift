@@ -39,7 +39,7 @@ class CoreDataManager {
             // Erase all Monuments form list
             favMonuments.removeAll()
             // Fetch all fav monuments from CoreData
-            fetchFavMonuments()
+            _ = fetchFavMonuments()
             delegate?.updateView()
         }
 

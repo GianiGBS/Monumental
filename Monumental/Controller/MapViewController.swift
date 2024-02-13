@@ -84,7 +84,9 @@ class MapViewController: UIViewController {
         }
     func centerMapOnUserLocation(mapView: MKMapView) {
         guard let userLocation = mapView.userLocation.location?.coordinate else {
-            return // La position de l'utilisateur n'est pas disponible
+            presentAlert(title: "Error", message: "Position non disponibles.")
+            
+            return
         }
 
         let center = CLLocationCoordinate2D(latitude: userLocation.latitude, longitude: userLocation.longitude)
@@ -137,7 +139,7 @@ class MapViewController: UIViewController {
     func showLandmarkDetails(_ landmark: Landmark) {
             if let detailsVC = floatingPanelController.contentViewController as? MonumentDetailsViewController {
                 detailsVC.selectedLandmark = landmark
-                // TODO: Implement logic to update the UI in the details view controller based on the selected landmark.
+                // Implement logic to update the UI in the details view controller based on the selected landmark.
                 // This could include updating labels, images, or any other relevant UI elements.
             }
         }
@@ -169,11 +171,6 @@ extension MapViewController: MKMapViewDelegate {
                 annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView.canShowCallout = true
                 annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//                // Add a button to annotation's bubble
-//                        let directionsButton = UIButton(type: .detailDisclosure)
-//                        directionsButton.addTarget(self, action: #selector(directionsButtonTapped),
-//                                                   for: .touchUpInside)
-//                        annotationView.rightCalloutAccessoryView = directionsButton
             }
             return annotationView
         }
@@ -202,14 +199,17 @@ extension MapViewController: ViewDelegate {
     func updateView() {
         landmarks = landmarkModel.monuments
         print(landmarkModel.monuments)
-        addLandmarkMarkers(to: mapView)
-        // recentrer la carte
-        centerMapOnLandmarks()
-        setUpFloatingPanel()
+        if landmarks?.isEmpty ?? true {
+            floatingPanelController.hide(animated: true)
+        } else {
+            addLandmarkMarkers(to: mapView)
+            centerMapOnLandmarks()
+            setUpFloatingPanel()
+        }
     }
-    func fetchDataInProgress(shown: Bool) {
-    }
+    func fetchDataInProgress(shown: Bool) {}
     func presentAlert(title: String, message: String) {
+        // Present alert message to user
     }
 }
 
