@@ -7,6 +7,7 @@
 
 import XCTest
 import CoreLocation
+import Firebase
 @testable import Monumental
 
 final class CoreLocationServiceTests: XCTestCase {
