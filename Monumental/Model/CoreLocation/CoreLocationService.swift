@@ -64,11 +64,15 @@ class CoreLocationService: NSObject, CLLocationManagerDelegate {
                     if let department = placemark.subAdministrativeArea {
                         completion(department, nil)
                     } else {
-                        completion(nil, nil)
+                        completion(nil, LocationErrors.noDepartment)
                     }
                 } else {
-                    completion(nil, nil)
+                    completion(nil, LocationErrors.noPlacemark)
                 }
             }
         }
+    enum LocationErrors: Error {
+        case noPlacemark
+        case noDepartment
+    }
     }

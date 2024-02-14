@@ -25,8 +25,9 @@ final class CoreLocationServiceTests: XCTestCase {
         }
 
     // MARK: - Tests
-        func testGetDepartmentName() {
-            let expectation = XCTestExpectation(description: "Reverse geocoding")
+    // Test with valid location
+        func testGetDepartmentNameWithValidLocation() {
+            let expectation = XCTestExpectation(description: "Reverse geocoding for valid location")
 
             let coordinates = CLLocationCoordinate2D(latitude: 48.8566,
                                                      longitude: 2.3522) // For Paris, France Location
@@ -45,11 +46,11 @@ final class CoreLocationServiceTests: XCTestCase {
             wait(for: [expectation], timeout: 5.0)
         }
 
+    // Test with invalid location
         func testGetDepartmentNameForInvalidLocation() {
             let expectation = XCTestExpectation(description: "Reverse geocoding for an invalid location")
 
-            // Utilisation de coordonnées qui ne correspondent à aucun emplacement réel
-            let coordinates = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+            let coordinates = CLLocationCoordinate2D(latitude: 0, longitude: 0) // Invalid location
             let location = CLLocation(coordinate: coordinates,
                                       altitude: 0,
                                       horizontalAccuracy: 0,
@@ -58,7 +59,7 @@ final class CoreLocationServiceTests: XCTestCase {
 
             locationService.getDepartmentName(for: location) { department, error in
                 XCTAssertNil(department, "Department name should be null for an invalid location.")
-                XCTAssertNil(error, "No reverse geocoding errors should be returned.")
+                XCTAssertNotNil(error, "Expected error for invalid location.")
                 expectation.fulfill()
             }
 
