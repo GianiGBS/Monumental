@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Monumental.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C26FBF832AD716CA00E2220C"
+               BuildableName = "MonumentalTests.xctest"
+               BlueprintName = "MonumentalTests"
+               ReferencedContainer = "container:Monumental.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
