@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C264B1332B7812E4007BB893 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = C264B1322B7812E4007BB893 /* FirebasePerformance */; };
-		C264B1352B78208B007BB893 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C264B1342B78208B007BB893 /* GoogleService-Info.plist */; };
 		C26FBF6F2AD716C800E2220C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF6E2AD716C800E2220C /* AppDelegate.swift */; };
 		C26FBF712AD716C800E2220C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF702AD716C800E2220C /* SceneDelegate.swift */; };
 		C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FBF722AD716C800E2220C /* SearchViewController.swift */; };
@@ -18,6 +17,9 @@
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
 		C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278624A2B55B048003005AC /* ContentTableViewController.swift */; };
 		C2B9651C2B7C2E9C00CBF3FF /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = C2B9651B2B7C2E9C00CBF3FF /* FirebasePerformance */; };
+		C2B965282B7D0A6000CBF3FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2B965272B7D0A6000CBF3FF /* GoogleService-Info.plist */; };
+		C2B9652A2B7D0D9C00CBF3FF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C2B965292B7D0D9C00CBF3FF /* FirebaseAnalytics */; };
+		C2B9652C2B7D0D9C00CBF3FF /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C2B9652B2B7D0D9C00CBF3FF /* FirebaseAnalyticsSwift */; };
 		C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */; };
 		C2D426802B603F8B007CEB97 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */; };
 		C2D426822B604061007CEB97 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426812B604061007CEB97 /* CoreDataManager.swift */; };
@@ -58,7 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C264B1342B78208B007BB893 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C26FBF6B2AD716C800E2220C /* Monumental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monumental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FBF6E2AD716C800E2220C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26FBF702AD716C800E2220C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		C26FBF7F2AD716C900E2220C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C278624A2B55B048003005AC /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
+		C2B965272B7D0A6000CBF3FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
 		C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C2D426812B604061007CEB97 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -102,9 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B9652C2B7D0D9C00CBF3FF /* FirebaseAnalyticsSwift in Frameworks */,
 				C2D8689F2B1FA88200F3294C /* FloatingPanel in Frameworks */,
 				C2D8688C2AF93B1A00F3294C /* CoreLocation.framework in Frameworks */,
 				C264B1332B7812E4007BB893 /* FirebasePerformance in Frameworks */,
+				C2B9652A2B7D0D9C00CBF3FF /* FirebaseAnalytics in Frameworks */,
 				C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +149,7 @@
 				C26FBF6E2AD716C800E2220C /* AppDelegate.swift */,
 				C26FBF702AD716C800E2220C /* SceneDelegate.swift */,
 				C26FBF7F2AD716C900E2220C /* Info.plist */,
-				C264B1342B78208B007BB893 /* GoogleService-Info.plist */,
+				C2B965272B7D0A6000CBF3FF /* GoogleService-Info.plist */,
 				C26FBFA22AD7228300E2220C /* Model */,
 				C26FBFA12AD7226400E2220C /* View */,
 				C26FBFA32AD722A800E2220C /* Controller */,
@@ -312,6 +316,8 @@
 				C2D8687D2AF150FE00F3294C /* Alamofire */,
 				C2D8689E2B1FA88200F3294C /* FloatingPanel */,
 				C264B1322B7812E4007BB893 /* FirebasePerformance */,
+				C2B965292B7D0D9C00CBF3FF /* FirebaseAnalytics */,
+				C2B9652B2B7D0D9C00CBF3FF /* FirebaseAnalyticsSwift */,
 			);
 			productName = Monumental;
 			productReference = C26FBF6B2AD716C800E2220C /* Monumental.app */;
@@ -387,7 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */,
-				C264B1352B78208B007BB893 /* GoogleService-Info.plist in Resources */,
+				C2B965282B7D0A6000CBF3FF /* GoogleService-Info.plist in Resources */,
 				C26FBF7B2AD716C900E2220C /* Assets.xcassets in Resources */,
 				C26FBF762AD716C800E2220C /* Main.storyboard in Resources */,
 			);
@@ -616,6 +622,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = StudioCreoliste.Monumental;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -648,6 +655,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = StudioCreoliste.Monumental;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -783,6 +791,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebasePerformance;
+		};
+		C2B965292B7D0D9C00CBF3FF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C2B9652B2B7D0D9C00CBF3FF /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
 		};
 		C2D426962B731645007CEB97 /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
