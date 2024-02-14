@@ -18,7 +18,6 @@
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
 		C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278624A2B55B048003005AC /* ContentTableViewController.swift */; };
 		C2B9651C2B7C2E9C00CBF3FF /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = C2B9651B2B7C2E9C00CBF3FF /* FirebasePerformance */; };
-		C2B965242B7C341600CBF3FF /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C2B965232B7C341600CBF3FF /* FirebaseAnalyticsSwift */; };
 		C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */; };
 		C2D426802B603F8B007CEB97 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */; };
 		C2D426822B604061007CEB97 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D426812B604061007CEB97 /* CoreDataManager.swift */; };
@@ -107,7 +106,6 @@
 				C2D8688C2AF93B1A00F3294C /* CoreLocation.framework in Frameworks */,
 				C264B1332B7812E4007BB893 /* FirebasePerformance in Frameworks */,
 				C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */,
-				C2B965242B7C341600CBF3FF /* FirebaseAnalyticsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +312,6 @@
 				C2D8687D2AF150FE00F3294C /* Alamofire */,
 				C2D8689E2B1FA88200F3294C /* FloatingPanel */,
 				C264B1322B7812E4007BB893 /* FirebasePerformance */,
-				C2B965232B7C341600CBF3FF /* FirebaseAnalyticsSwift */,
 			);
 			productName = Monumental;
 			productReference = C26FBF6B2AD716C800E2220C /* Monumental.app */;
@@ -770,11 +767,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebasePerformance;
-		};
-		C2B965232B7C341600CBF3FF /* FirebaseAnalyticsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C2D426922B72FFE8007CEB97 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
 		};
 		C2D426962B731645007CEB97 /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
