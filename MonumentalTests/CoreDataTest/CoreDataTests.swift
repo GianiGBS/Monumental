@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import CoreData
 @testable import Monumental
 
 class CoreDataManagerTests: XCTestCase {

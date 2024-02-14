@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import Alamofire
 @testable import Monumental
 
 final class ExploreServiceTests: XCTestCase {
