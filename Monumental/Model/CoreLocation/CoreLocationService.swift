@@ -9,70 +9,74 @@ import Foundation
 import CoreLocation
 
 class CoreLocationService: NSObject, CLLocationManagerDelegate {
-
+    
     // MARK: - Singleton
-    static var shared = CoreLocationService()
-
+    //    static var shared = CoreLocationService()
+    
     // MARK: - Properties
     private let locationManager = CLLocationManager()
     private var currentLocation: CLLocation?
     var currentDepartment = ""
     weak var delegate: CorelocationServiceDelegate?
-
-    // MARK: - Methods
-    func getLocation() {
+    
+    // MARK: - Init
+    override init() {
+        super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    // MARK: - Methods
+    func getLocation() {
+    }
+    func requestLocationAuthorization() {
         locationManager.requestWhenInUseAuthorization()
+    }
+    func startUpdatingLocation() {
         locationManager.startUpdatingLocation()
     }
     func stopUpdatingLocation() {
         locationManager.stopUpdatingLocation()
     }
-    // MARK: - Get location
+    // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            if let location = locations.first {
-                currentLocation = location
-
-                let dispatchGroup = DispatchGroup()
-                dispatchGroup.enter()
-                // Call to get departement from location
-                getDepartmentName(for: location) { departmentName, error in
-                    if let department = departmentName {
-                        self.currentDepartment = "\(department)"
-                        print("User is located in : \(department)")
-
-                    } else if let error = error {
-                        print("Reverse geocoding error : \(error.localizedDescription)")
-                    }
-                    dispatchGroup.leave()
+        guard let location = locations.first else { return }
+        
+        // Call to get departement from location
+        getDepartmentName(for: location) { [weak self] departmentName, error in
+            DispatchQueue.main.async {
+                if let department = departmentName {
+                    self?.delegate?.didUpdateDepartment(department)
+                    self?.currentDepartment = "\(department)"
+                    print("User is located in : \(department)")
+                } else if let error = error {
+                    self?.delegate?.didFailWithError(error)
+                    print("Reverse geocoding error : \(error.localizedDescription)")
                 }
             }
         }
-
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        DispatchQueue.main.async {
+            self.delegate?.didFailWithError(error)
+        }
+    }
+    
     // MARK: - Get Department name from location
-        func getDepartmentName(for location: CLLocation, completion: @escaping (String?, Error?) -> Void) {
-            let geocoder = CLGeocoder()
-
-            geocoder.reverseGeocodeLocation(location) { placemarks, error in
-                if let error = error {
-                    completion(nil, error)
-                    return
-                }
-
-                if let placemark = placemarks?.first {
-                    if let department = placemark.subAdministrativeArea {
-                        completion(department, nil)
-                    } else {
-                        completion(nil, LocationErrors.noDepartment)
-                    }
-                } else {
-                    completion(nil, LocationErrors.noPlacemark)
-                }
+    func getDepartmentName(for location: CLLocation, completion: @escaping (String?, Error?) -> Void) {
+        let geocoder = CLGeocoder()
+        
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+            if let error = error {
+                completion(nil, error)
+                return
             }
+            
+            let department = placemarks?.first?.subAdministrativeArea
+            completion(department, department ==  nil ? LocationErrors.noDepartment:  nil)
+            
         }
+    }
     enum LocationErrors: Error {
-        case noPlacemark
         case noDepartment
     }
-    }
+}

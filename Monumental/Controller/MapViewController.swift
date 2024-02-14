@@ -20,6 +20,7 @@ class MapViewController: UIViewController {
     private let searchView = SearchViewController()
     public weak var delegate: MapViewDelegate?
     private let landmarkModel = ExploreManager()
+    private var locationService: CoreLocationService?
     let floatingPanelController = FloatingPanelController()
     let floatingPanelStoryboardID = "tableViewFloatingPanel"
     let modalStoryboardID = "searchFloatingPanel"
@@ -33,7 +34,8 @@ class MapViewController: UIViewController {
         setUpDelegateModel()
         setupMapView()
         searchView.delegate = self
-        getLocation()
+        setUpLocationService()
+        
     }
 
     // MARK: - Action
@@ -41,9 +43,10 @@ class MapViewController: UIViewController {
         presentSearchModal()
     }
     @IBAction func showNearBy() {
+        locationService?.startUpdatingLocation()
         // Get Department
         centerMapOnUserLocation(mapView: mapView)
-        didRequestLandmarks(department: CoreLocationService.shared.currentDepartment)
+        didRequestLandmarks(department: locationService?.currentDepartment)
     }
     @objc func directionsButtonTapped() {
         // Select Annotation
@@ -73,9 +76,11 @@ class MapViewController: UIViewController {
         landmarkModel.delegate = self
     }
     // MARK: - MapView
-    func getLocation() {
-        // Get user location
-        CoreLocationService.shared.getLocation()
+    // Get user location
+    func setUpLocationService() {
+        locationService = CoreLocationService()
+        locationService?.delegate = self
+        locationService?.requestLocationAuthorization()
     }
     func setupMapView() {
             mapView.delegate = self
@@ -190,6 +195,16 @@ extension MapViewController: MKMapViewDelegate {
     }
 }
 
+// MARK: - CoreLocationServiceDelegate
+extension MapViewController: CorelocationServiceDelegate {
+    func didUpdateDepartment(_ department: String) {
+        didRequestLandmarks(department: department)
+    }
+    
+    func didFailWithError(_ error: Error) {
+        print("Location error \(error.localizedDescription)")
+    }
+}
 // MARK: - FloatingPanel - Delegate
 extension MapViewController: FloatingPanelControllerDelegate {
 }
@@ -199,12 +214,15 @@ extension MapViewController: ViewDelegate {
     func updateView() {
         landmarks = landmarkModel.monuments
         print(landmarkModel.monuments)
+
         if landmarks?.isEmpty ?? true {
-            floatingPanelController.hide(animated: true)
+            floatingPanelController.removePanelFromParent(animated: true)
+            presentAlert(title: "Oups!", message: "Liste de recherche vide.")
         } else {
             addLandmarkMarkers(to: mapView)
             centerMapOnLandmarks()
             setUpFloatingPanel()
+            floatingPanelController.move(to: .half, animated: false)
         }
     }
     func fetchDataInProgress(shown: Bool) {}

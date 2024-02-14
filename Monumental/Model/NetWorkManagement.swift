@@ -21,7 +21,8 @@ protocol MapViewDelegate: AnyObject {
     func dismissViewModal()
 }
 protocol CorelocationServiceDelegate: AnyObject {
-    func didUpdateLocation(departement: String?)
+    func didUpdateDepartment(_ department: String)
+    func didFailWithError(_ error: Error)
 }
 // MARK: - Protocol
 protocol AFSession {

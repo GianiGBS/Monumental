@@ -38,7 +38,6 @@
 		C2D8686A2AE6D33900F3294C /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868692AE6D33900F3294C /* Explore.swift */; };
 		C2D8686D2AE6DA9600F3294C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686C2AE6DA9600F3294C /* Landmark.swift */; };
 		C2D868702AE71BD900F3294C /* CoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */; };
-		C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868712AE71C1100F3294C /* CurrentLocation.swift */; };
 		C2D8687E2AF150FE00F3294C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C2D8687D2AF150FE00F3294C /* Alamofire */; };
 		C2D868802AF1B81400F3294C /* MockExploreSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */; };
 		C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D868812AF1B9DA00F3294C /* MockedData.swift */; };
@@ -90,7 +89,6 @@
 		C2D868692AE6D33900F3294C /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		C2D8686C2AE6DA9600F3294C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationService.swift; sourceTree = "<group>"; };
-		C2D868712AE71C1100F3294C /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		C2D8687F2AF1B81400F3294C /* MockExploreSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExploreSession.swift; sourceTree = "<group>"; };
 		C2D868812AF1B9DA00F3294C /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		C2D868852AF20EAF00F3294C /* Landmark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Landmark.json; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				C2D8686F2AE71BD900F3294C /* CoreLocationService.swift */,
-				C2D868712AE71C1100F3294C /* CurrentLocation.swift */,
 			);
 			path = CoreLocation;
 			sourceTree = "<group>";
@@ -448,7 +445,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */,
-				C2D868722AE71C1100F3294C /* CurrentLocation.swift in Sources */,
 				C2D426912B65BD43007CEB97 /* MonumentCollectionViewCell.swift in Sources */,
 				C26FBF732AD716C800E2220C /* SearchViewController.swift in Sources */,
 				C2D426822B604061007CEB97 /* CoreDataManager.swift in Sources */,
