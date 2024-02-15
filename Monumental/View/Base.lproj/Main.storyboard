@@ -91,7 +91,7 @@
                                                         <rect key="frame" x="0.0" y="390" width="390" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSe-y7-bMc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="60"/>
                                                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="gray" imagePlacement="top" title="Étude" subtitle="" imagePadding="3">
@@ -137,6 +137,7 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOS-Jq-sPL">
                                                                 <rect key="frame" x="132.66666666666666" y="0.0" width="124.66666666666666" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="gray" imagePlacement="top" title="Itinéraire" imagePadding="3">
@@ -154,7 +155,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-NT-FL8">
-                                                                <rect key="frame" x="265.33333333333331" y="0.0" width="124.66666666666669" height="60"/>
+                                                                <rect key="frame" x="199" y="0.0" width="191" height="60"/>
                                                                 <color key="tintColor" systemColor="systemBrownColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="gray" imagePlacement="top" title="Signet" imagePadding="3">
@@ -179,6 +180,7 @@
                                                             <mask key="subviews">
                                                                 <exclude reference="9TA-wO-MGB"/>
                                                                 <exclude reference="syJ-me-LQA"/>
+                                                                <exclude reference="lOS-Jq-sPL"/>
                                                             </mask>
                                                         </variation>
                                                     </stackView>
@@ -510,14 +512,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MonumentCell" id="ujy-Pv-rzd" customClass="MonumentTableViewCell" customModule="Monumental" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="390" height="73.666664123535156"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="74.333335876464844"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ujy-Pv-rzd" id="8Zd-cU-sYQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="73.666664123535156"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="74.333335876464844"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE5-Lo-DVL">
-                                            <rect key="frame" x="5" y="3" width="380" height="67.666666666666671"/>
+                                            <rect key="frame" x="5" y="3" width="380" height="68.333333333333329"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building.columns" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g3h-6C-4Ko">
                                                     <rect key="frame" x="0.0" y="0.66666666666666785" width="50" height="49.333333333333329"/>
@@ -533,10 +535,10 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFR-hA-CGs">
-                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="67.666666666666671"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="68.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwu-uF-QBc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="67.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="68.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                             <color key="textColor" systemColor="systemBrownColor"/>
                                                             <nil key="highlightedColor"/>
@@ -552,16 +554,16 @@
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9oB-SW-m9m">
-                                                    <rect key="frame" x="49" y="0.0" width="331" height="67.666666666666671"/>
+                                                    <rect key="frame" x="49" y="0.0" width="331" height="68.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titreEditorialDeLaNotice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGR-Mv-4ND">
-                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="50.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="51.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="denominationDeLEdifice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-Mi-iNb">
-                                                            <rect key="frame" x="0.0" y="50.666666666666664" width="331" height="16.999999999999993"/>
+                                                            <rect key="frame" x="0.0" y="51.333333333333336" width="331" height="17.000000000000007"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="tsJ-A4-Vp0"/>
                                                             </constraints>
@@ -964,13 +966,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
