@@ -14,16 +14,17 @@ class CoreLocationService: NSObject, CLLocationManagerDelegate {
     //    static var shared = CoreLocationService()
     
     // MARK: - Properties
-    private let locationManager = CLLocationManager()
+    private var locationManager = CLLocationManager()
     private var currentLocation: CLLocation?
     var currentDepartment = ""
     weak var delegate: CorelocationServiceDelegate?
     
     // MARK: - Init
-    override init() {
+    init(locationManager:CLLocationManager = CLLocationManager()){
+        self.locationManager = locationManager
         super.init()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     // MARK: - Methods
     func getLocation() {

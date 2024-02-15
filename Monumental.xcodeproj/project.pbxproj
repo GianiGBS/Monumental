@@ -21,6 +21,7 @@
 		C26FBF7B2AD716C900E2220C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7A2AD716C900E2220C /* Assets.xcassets */; };
 		C26FBF7E2AD716C900E2220C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26FBF7C2AD716C900E2220C /* LaunchScreen.storyboard */; };
 		C278624B2B55B048003005AC /* ContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C278624A2B55B048003005AC /* ContentTableViewController.swift */; };
+		C2966DC52B7D8B5000564165 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2966DC42B7D8B5000564165 /* MockLocationManager.swift */; };
 		C2B965302B7D40E300CBF3FF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C2B9652F2B7D40E300CBF3FF /* FirebaseAnalytics */; };
 		C2B965342B7D40E300CBF3FF /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = C2B965332B7D40E300CBF3FF /* FirebasePerformance */; };
 		C2D4267E2B5B1C1E007CEB97 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */; };
@@ -74,6 +75,7 @@
 		C26FBF7F2AD716C900E2220C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26FBF842AD716CA00E2220C /* MonumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C278624A2B55B048003005AC /* ContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewController.swift; sourceTree = "<group>"; };
+		C2966DC42B7D8B5000564165 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 		C2D4267D2B5B1C1E007CEB97 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
 		C2D4267F2B603F8B007CEB97 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C2D426812B604061007CEB97 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		C2D8688F2B02901000F3294C /* CoreLocationTest */ = {
 			isa = PBXGroup;
 			children = (
+				C2966DC42B7D8B5000564165 /* MockLocationManager.swift */,
 				C2D8688D2B02717000F3294C /* CoreLocationServiceTests.swift */,
 			);
 			path = CoreLocationTest;
@@ -472,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2966DC52B7D8B5000564165 /* MockLocationManager.swift in Sources */,
 				C2D868822AF1B9DA00F3294C /* MockedData.swift in Sources */,
 				C2D4268C2B640DE2007CEB97 /* CoreDataStackTests.swift in Sources */,
 				C2D4268F2B640E9A007CEB97 /* CoreDataTests.swift in Sources */,
