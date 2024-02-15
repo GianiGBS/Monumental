@@ -32,15 +32,15 @@ final class CoreLocationServiceTests: XCTestCase {
     func testGetDepartmentNameWithValidLocation() {
             let expectation = XCTestExpectation(description: "Reverse geocoding for valid location using mock")
 
-            // Configurer le mock pour simuler une réponse réussie
+            // Mock response OK
             mockLocationManager.simulateSuccessResponse = true
             let coordinates = CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522) // Paris, France Location
             let location = CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
 
-            // Simuler le changement d'autorisation si nécessaire
+            // Autorisation
             mockLocationManager.setAuthorizationStatus(.authorizedWhenInUse)
 
-            // Effectuer le test
+            // Do test
             locationService.getDepartmentName(for: location) { department, error in
                 XCTAssertEqual(department, "Paris", "Expected department name to be 'Paris' from mock.")
                 XCTAssertNil(error, "No reverse geocoding errors should be returned from mock.")
@@ -53,12 +53,12 @@ final class CoreLocationServiceTests: XCTestCase {
     func testGetDepartmentNameForInvalidLocationUsingMock() {
             let expectation = XCTestExpectation(description: "Reverse geocoding for an invalid location using mock")
 
-            // Configurer le mock pour simuler une situation d'erreur
+            // Mock error
             mockLocationManager.simulateGeocoderError = true
             let invalidCoordinates = CLLocationCoordinate2D(latitude: 0, longitude: 0) // Coordonnées invalides
             let invalidLocation = CLLocation(latitude: invalidCoordinates.latitude, longitude: invalidCoordinates.longitude)
 
-            // Effectuer le test
+            // Do test
             locationService.getDepartmentName(for: invalidLocation) { department, error in
                 XCTAssertNil(department, "Department name should be null for an invalid location.")
                 XCTAssertNotNil(error, "An error should be returned for an invalid location.")

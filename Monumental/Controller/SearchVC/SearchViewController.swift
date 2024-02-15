@@ -59,7 +59,7 @@ extension SearchViewController: UISearchResultsUpdating {
         if searchText.isEmpty {
             filteredDepartments = allDepartments
         } else {
-            // Filtrer les départements en fonction du texte de la recherche
+            // Filtered departments with search text
             filteredDepartments = allDepartments.filter {
                 $0.code.lowercased().contains(searchText.lowercased()) ||
                 $0.name.lowercased().contains(searchText.lowercased())
@@ -70,7 +70,7 @@ extension SearchViewController: UISearchResultsUpdating {
 
 // MARK: Update AutoCompletion Table
     func updateSearchResultsTableView(with departments: [Department]) {
-        // Mise à jour des résultats de recherche avec les départements filtrés.
+        // Update search result with filtered department.
         filteredDepartments = departments
         tableView.reloadData()
     }
@@ -87,7 +87,7 @@ extension SearchViewController: UISearchBarDelegate {
     // MARK: Search button cliked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let selectedDepartment = searchBar.text else { return }
-        // Effectuez l'action avec le département sélectionné
+        // do when department selected
         print("Selected department: \(selectedDepartment)")
         searchBar.resignFirstResponder()
 
@@ -97,7 +97,7 @@ extension SearchViewController: UISearchBarDelegate {
 
     // MARK: Cancel button cliked
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        // Réinitialiser la liste des départements en cas d'annulation de la recherche
+        // Reset list if search cancel
         filteredDepartments = allDepartments
         updateSearchResultsTableView(with: filteredDepartments)
         print("Dismiss")
@@ -126,11 +126,6 @@ extension SearchViewController: UITableViewDataSource {
             for: indexPath)
 
         let department = filteredDepartments[indexPath.row]
-
-//        cell.contentConfiguration = UIListContentConfiguration.cell()
-//        var content = cell.defaultContentConfiguration()
-//        cell.contentConfiguration = content
-//        content.text = "\(department.code) - \(department.name)"
 
         cell.textLabel?.text = "\(department.code) - \(department.name)"
 
