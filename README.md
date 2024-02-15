@@ -20,7 +20,7 @@ Installation
 
 Clonez ce dépôt et importez-le dans Xcode :
 
-git clone https://github.com/votreUsername/MONUMENTAL.git
+git clone https://github.com/GianiGBS/MONUMENTAL.git
 
 Installez les dépendances nécessaires via CocoaPods :
 
