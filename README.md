@@ -1,4 +1,4 @@
-# MONUMENTAL README
+# MONUMENTAL
 
 Bienvenue sur le dépôt de **MONUMENTAL**, l’application iOS conçue pour transformer chaque promenade en une découverte enrichissante des monuments historiques de France. Grâce à MONUMENTAL, explorez l’histoire qui vous entoure comme jamais auparavant.
 
