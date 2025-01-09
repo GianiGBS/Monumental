@@ -2,7 +2,7 @@
 
 Bienvenue sur le dépôt de **MONUMENTAL**, l’application iOS conçue pour transformer chaque promenade en une découverte enrichissante des monuments historiques de France. Grâce à MONUMENTAL, explorez l’histoire qui vous entoure comme jamais auparavant.
 
-## Fonctionnalités
+## 📜Fonctionnalités
 
 - **Découverte de monuments** : Visualisez les monuments historiques à proximité grâce à la géolocalisation.
 - **Informations détaillées** : Accédez à des descriptions complètes, des images et des histoires derrière chaque monument.
@@ -16,7 +16,7 @@ Bienvenue sur le dépôt de **MONUMENTAL**, l’application iOS conçue pour tra
 - Compatible avec iPhone et iPad.
 - Connexion internet pour le téléchargement des données des monuments.
 
-## Installation
+## 🚀Installation
 
 Clonez ce dépôt et importez-le dans Xcode :
 
@@ -32,7 +32,7 @@ pod install
 
 Ouvrez le fichier `MONUMENTAL.xcworkspace` et exécutez l’application sur votre simulateur ou appareil iOS.
 
-## Technologies Utilisées
+## 🛠️Technologies Utilisées
 
 - **Swift** : Langage de programmation pour le développement iOS.
 - **MVC** : Architecture Modèle-Vue-Contrôleur pour structurer l’application.
@@ -48,11 +48,11 @@ Ouvrez le fichier `MONUMENTAL.xcworkspace` et exécutez l’application sur votr
 
 Nous encourageons la contribution à **MONUMENTAL** ! Si vous souhaitez contribuer, veuillez forker le dépôt, créer une branche, apporter vos modifications, et soumettre une pull request.
 
-## Licence
+## 📜Licence
 
 **MONUMENTAL** est disponible sous la licence MIT. Voir le fichier `LICENSE` pour plus d’informations.
 
-## Contact
+## 🤝Contact
 
 Pour toute question ou suggestion, n’hésitez pas à me contacter via [email/contact].
 
