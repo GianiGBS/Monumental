@@ -1,61 +1,176 @@
-# MONUMENTAL
+# **Monumental**
 
-Bienvenue sur le dépôt de **MONUMENTAL**, l’application iOS conçue pour transformer chaque promenade en une découverte enrichissante des monuments historiques de France. Grâce à MONUMENTAL, explorez l’histoire qui vous entoure comme jamais auparavant.
+  
 
-## 📜Fonctionnalités
+**Monumental** est une application iOS permettant de découvrir les monuments historiques en France grâce à la géolocalisation et une carte interactive. Elle offre une expérience culturelle enrichissante en mettant à disposition des informations détaillées sur les monuments à proximité.
 
-- **Découverte de monuments** : Visualisez les monuments historiques à proximité grâce à la géolocalisation.
-- **Informations détaillées** : Accédez à des descriptions complètes, des images et des histoires derrière chaque monument.
-- **Liste de favoris** : Sauvegardez vos monuments préférés pour les retrouver facilement.
-- **Navigation et itinéraires** : Obtenez des directions pour visiter les monuments sélectionnés.
-- **Expérience interactive** : Utilisez le FloatingPanel pour explorer les monuments sans quitter la vue de la carte.
+  
 
-## Prérequis
+## **📝 Description**
 
-- **iOS 13.0 ou ultérieur**.
-- Compatible avec iPhone et iPad.
-- Connexion internet pour le téléchargement des données des monuments.
+  
 
-## 🚀Installation
+L’application utilise des technologies modernes pour offrir une navigation fluide et des fonctionnalités optimales :
 
-Clonez ce dépôt et importez-le dans Xcode :
+  
 
+• Géolocalisation précise pour afficher les monuments proches.
+
+• Cartographie interactive pour explorer facilement les lieux historiques.
+
+• Favoris pour sauvegarder les monuments préférés.
+
+• Intégration de données en temps réel grâce à des API.
+
+  
+
+## **📜 Fonctionnalités principales**
+
+  
+
+**1\. Géolocalisation des monuments**
+
+- Utilisation de **CoreLocation** pour déterminer la position de l’utilisateur.
+
+- Affichage des monuments environnants grâce à **MapKit**.
+
+  
+
+**2\. Consultation des détails**
+
+- Informations détaillées sur chaque monument via un panneau interactif (**FloatingPanel**).
+
+- Permet de consulter les détails sans obstruer la carte.
+
+  
+
+**3\. Sauvegarde des favoris**
+
+- Stockage local des monuments favoris grâce à **CoreData**.
+
+- Accès rapide aux lieux sauvegardés pour une consultation ultérieure.
+
+  
+
+**4\. Performances et optimisation**
+
+- Surveillance des performances via **Firebase Performance SDK**.
+
+- Chargement rapide des données grâce à **Alamofire** et **CoreData**.
+
+  
+
+## **🎨 Interface utilisateur**
+
+- **Responsive Design** : Interface adaptée à toutes les tailles d’écran.
+
+- **Carte interactive** : Navigation fluide et intuitive.
+
+- **Effets modernes** : Panneaux flottants et animations fluides pour une meilleure expérience.
+
+  
+
+## **🛠️ Architecture technique**
+
+1\. **Architecture MVC (Modèle-Vue-Contrôleur)** :
+
+- Séparation claire des responsabilités pour une meilleure maintenance.
+
+- Intégration de **ViewDelegate** pour renforcer l’interaction entre les vues et les contrôleurs.
+
+2\. **Gestion des données** :
+
+- **API Explorer** pour récupérer les informations des monuments.
+
+- Persistance locale avec **CoreData** pour accéder aux données hors ligne.
+
+3\. **Localisation et affichage** :
+
+- **CoreLocation** pour la position de l’utilisateur.
+
+- **MapKit** pour afficher les monuments sur une carte.
+
+4\. **Intégration continue et surveillance** :
+
+- **Bitrise** pour automatiser les tests, la construction et le déploiement.
+
+- **Firebase Performance SDK** pour surveiller et optimiser les performances.
+
+  
+
+## **🚀 Installation**
+
+1\. Clonez le dépôt GitHub :
+
+  
 ```bash
-git clone https://github.com/GianiGBS/MONUMENTAL.git
+git clone https://github.com/GianiGBS/Monumental.git
+
+cd Monumental
 ```
+ 
+2\. Ouvrez le projet dans Xcode.
 
-Installez les dépendances nécessaires via CocoaPods :
+3\. Configurez les clés API nécessaires pour l’intégration avec les services tiers (API Explorer, OpenWeather, etc.).
 
-```bash
-pod install
-```
+4\. Lancez l’application sur un simulateur ou un appareil physique compatible.
 
-Ouvrez le fichier `MONUMENTAL.xcworkspace` et exécutez l’application sur votre simulateur ou appareil iOS.
+  
 
-## 🛠️Technologies Utilisées
+## **✅ Tests**
 
-- **Swift** : Langage de programmation pour le développement iOS.
-- **MVC** : Architecture Modèle-Vue-Contrôleur pour structurer l’application.
-- **CoreLocation et MapKit** : Pour la géolocalisation et l’affichage des cartes.
-- **CoreData** : Pour la gestion de la liste de favoris.
-- **Alamofire** : Pour les requêtes réseau.
-- **API Explorer** : API pour récupérer les données des monuments.
-- **FloatingPanel** : Pour une interface utilisateur interactive et non obstrusive.
-- **Bitrise** : Pour l’intégration et le déploiement continus.
-- **Firebase Performance SDK** : Pour le suivi des performances de l’application.
+- Automatisation des tests avec **Bitrise** pour garantir la qualité du code.
 
-## Contribution
+- Tests unitaires pour vérifier les fonctionnalités principales.
 
-Nous encourageons la contribution à **MONUMENTAL** ! Si vous souhaitez contribuer, veuillez forker le dépôt, créer une branche, apporter vos modifications, et soumettre une pull request.
+- Surveillance des performances et optimisation continue.
 
-## 📜Licence
+  
 
-**MONUMENTAL** est disponible sous la licence MIT. Voir le fichier `LICENSE` pour plus d’informations.
+## **🎁 Points forts et bonus**
 
-## 🤝Contact
+1\. **UI moderne et intuitive** :
 
-Pour toute question ou suggestion, n’hésitez pas à me contacter via [email/contact].
+- Navigation interactive avec **FloatingPanel**.
 
-##
-**MONUMENTAL** est votre passeport pour explorer l’histoire et le patrimoine culturel de la France. Profitez de chaque promenade pour découvrir les trésors cachés qui vous entourent.
+- Consultation sans interrompre la vue principale.
 
+2\. **Performances optimisées** :
+
+- Chargements rapides grâce à la gestion des données locales et des API.
+
+3\. **Personnalisation** :
+
+- Possibilité de sauvegarder et de consulter des favoris.
+
+  
+
+## **🤝 Contribution**
+
+  
+
+Les contributions sont les bienvenues ! Si vous souhaitez signaler un problème ou proposer des améliorations, ouvrez une issue ou une pull request sur ce dépôt.
+
+  
+
+## **📜 Licence**
+
+  
+
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d’informations.
+
+  
+
+## **🎥 Démonstration**
+
+  
+
+Avec **Monumental**, explorez les monuments historiques près de chez vous ou lors de vos voyages. L’application vous permet de :
+
+  
+
+1\. Découvrir les monuments autour de votre position actuelle.
+
+2\. Enregistrer vos lieux préférés pour y revenir facilement.
+
+3\. Naviguer de manière fluide et intuitive grâce à une interface moderne.
